@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
-import sys, re
-import codecs
-import string
-import datetime
-import itertools
-import collections
-import sys
+import sys, re, codecs, string, datetime, itertools
+from lxml import etree
+from io import StringIO, BytesIO
+from math import log
 	
 def createwordlist(inputfile,outputfile):
 	lines = open(inputfile).read().split()
@@ -61,9 +58,28 @@ def colognedata():
 	dictionaryname = ["ACC","CAE","AE","AP90","AP","BEN","BHS","BOP","BOR","BUR","CCS","GRA","GST","IEG","INM","KRM","MCI","MD","MW72","MW","MWE","PD","PE","PGN","PUI","PWG","PW","SCH","SHS","SKD","SNP","STC","VCP","VEI","WIL","YAT","ALL"]
 	for dictionary in dictionaryname:
 		createhwlist(dictionary)
+def gerarddata():
+	# Parsing the XMLs. We will use them as globals when need be.
+	print "Preparing data of Gerard in gerard.txt"
+	roots = etree.parse('dicts/gerard/SL_roots.xml') # parses the XML file.
+	nouns = etree.parse('dicts/gerard/SL_nouns.xml')
+	# This filelist can include all or some files. By default it takes into account all XMLs of Gerard.
+	# If you need some specific database like roots, nouns etc you can keep them and remove the rest. It would speed up the process.
+	filelist = [roots, nouns]
+	#print "Will notify after every 100 words analysed."
+	n = nouns.xpath('/forms/f')
+	v = roots.xpath('/forms/f')
+	# Storing data
+	secondmemberlist = [member.get('form') for member in n]
+	secondmemberlist += [member.get('form') for member in v]
+	fout = codecs.open('dicts/gerard.txt','w','utf-8')
+	for mem in secondmemberlist:
+		fout.write(mem+"\n")
+	print "Completed adding data to gerard.txt"
+	fout.close()
+
 if __name__=="__main__":
 	sanhw2 = sanhw2()
 	sanhw2 = sorted(sanhw2, key=lambda x: (len(x[1]),len(x[0])), reverse=True)
 	colognedata()
-
-	
+	gerarddata()

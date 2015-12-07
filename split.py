@@ -4,6 +4,10 @@ import codecs
 import string
 import datetime
 import itertools
+from lxml import etree
+from io import StringIO, BytesIO
+import re
+from math import log
 
 # Function to return timestamp
 def timestamp():
@@ -100,8 +104,6 @@ def determ(word):
 	return output
 
 #http://stackoverflow.com/questions/8870261/how-to-split-text-without-spaces-into-list-of-words/11642687#11642687
-from math import log
-
 def infer_spaces(s,dictionary):
     words = open(dictionary).read().split()
     wordcost = dict((k, log((i+1)*log(len(words)))) for i,k in enumerate(words)) 
@@ -142,7 +144,7 @@ def infer_spaces(s,dictionary):
         reply = reply.rstrip('+')
     return reply
     #return "+".join(reversed(out))
-	
+
 if __name__=="__main__":
 	lstrep = [('A',('A','aa','aA','Aa','AA')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO'))]
 	dictionary = 'dicts/MD.txt'
@@ -152,11 +154,15 @@ if __name__=="__main__":
 	words = readwords(dictionary)
 	global solutions
 	solutions = {}
-	perm = permut(sys.argv[1],lstrep,words)
-	output = []
-	for mem in perm:
-		split = infer_spaces(mem,dictionary)
-		if split is not False:
-			output.append(split)
-	output = sorted(output,key=len)
-	print output[:5]
+	test = infer_spaces(inputword,dictionary)
+	if test is not False:
+		print [test]
+	else:
+		perm = permut(sys.argv[1],lstrep,words)
+		output = []
+		for mem in perm:
+			split = infer_spaces(mem,dictionary)
+			if split is not False:
+				output.append(split)
+		output = sorted(output,key=len)
+		print output[:5]
