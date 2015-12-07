@@ -4,6 +4,12 @@ from lxml import etree
 from io import StringIO, BytesIO
 from math import log
 	
+def unique(lst):
+	output = []
+	for member in lst:
+		if member not in output:
+			output.append(member)
+	return output
 def createwordlist(inputfile,outputfile):
 	lines = open(inputfile).read().split()
 	output = open(outputfile,'w')
@@ -58,28 +64,45 @@ def colognedata():
 	dictionaryname = ["ACC","CAE","AE","AP90","AP","BEN","BHS","BOP","BOR","BUR","CCS","GRA","GST","IEG","INM","KRM","MCI","MD","MW72","MW","MWE","PD","PE","PGN","PUI","PWG","PW","SCH","SHS","SKD","SNP","STC","VCP","VEI","WIL","YAT","ALL"]
 	for dictionary in dictionaryname:
 		createhwlist(dictionary)
+def sortdescending(lst):
+	return sorted(lst,key=len,reverse=True)
+def upasarga():
+	f = codecs.open('../inriaxmlwrapper/SL_preverbs.txt','r','utf-8')
+	data = f.readlines()
+	ups = []
+	for line in data:
+		word = line.split(' = ')[0]
+		ups.append(word)
+	return ups
+		
 def gerarddata():
 	# Parsing the XMLs. We will use them as globals when need be.
 	print "Preparing data of Gerard in gerard.txt"
-	roots = etree.parse('dicts/gerard/SL_roots.xml') # parses the XML file.
-	nouns = etree.parse('dicts/gerard/SL_nouns.xml')
-	# This filelist can include all or some files. By default it takes into account all XMLs of Gerard.
-	# If you need some specific database like roots, nouns etc you can keep them and remove the rest. It would speed up the process.
-	filelist = [roots, nouns]
-	#print "Will notify after every 100 words analysed."
-	n = nouns.xpath('/forms/f')
-	v = roots.xpath('/forms/f')
-	# Storing data
-	secondmemberlist = [member.get('form') for member in n]
-	secondmemberlist += [member.get('form') for member in v]
+	roots = etree.parse('../inriaxmlwrapper/SL_roots.xml') # parses the XML file.
+	nouns = etree.parse('../inriaxmlwrapper/SL_nouns.xml')
+	adverbs = etree.parse('../inriaxmlwrapper/SL_adverbs.xml')
+	final = etree.parse('../inriaxmlwrapper/SL_final.xml')
+	parts = etree.parse('../inriaxmlwrapper/SL_parts.xml')
+	pronouns = etree.parse('../inriaxmlwrapper/SL_pronouns.xml')
+	print 'Parsing over.'
+	out = []
+	for x in [nouns,roots,pronouns,final,parts,adverbs]:
+		# Storing data
+		out += [member.get('form') for member in x.xpath('/forms/f')]
+	for up in sorted(upasarga(),key=len,reverse=True):
+		out.append(up)
+	out = list(set(out))
+	out = sorted(out,key=len,reverse=True)	
 	fout = codecs.open('dicts/gerard.txt','w','utf-8')
-	for mem in secondmemberlist:
+	for mem in out:
 		fout.write(mem+"\n")
 	print "Completed adding data to gerard.txt"
 	fout.close()
 
 if __name__=="__main__":
+	"""
 	sanhw2 = sanhw2()
 	sanhw2 = sorted(sanhw2, key=lambda x: (len(x[1]),len(x[0])), reverse=True)
 	colognedata()
+	"""
 	gerarddata()

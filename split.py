@@ -132,8 +132,9 @@ def infer_spaces(s,dictionary):
         assert c == cost[i]
         out.append(s[i-k:i])
         i -= k
-    out = reversed(out)
 	# Alteration in the code to give only exact match.
+    """	
+    out = reversed(out)
     reply = ''
     for member in out:
         if member in words:
@@ -143,7 +144,8 @@ def infer_spaces(s,dictionary):
     if reply is not False:
         reply = reply.rstrip('+')
     return reply
-    #return "+".join(reversed(out))
+    """
+    return "+".join(reversed(out))
 
 if __name__=="__main__":
 	lstrep = [('A',('A','aa','aA','Aa','AA')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO'))]
@@ -155,7 +157,8 @@ if __name__=="__main__":
 	global solutions
 	solutions = {}
 	test = infer_spaces(inputword,dictionary)
-	if test is not False:
+	testparts = test[0].split('+')
+	if test[-2] is not '+' :
 		print [test]
 	else:
 		perm = permut(sys.argv[1],lstrep,words)
