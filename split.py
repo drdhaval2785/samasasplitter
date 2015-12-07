@@ -193,11 +193,6 @@ def trypartition(word,dictionary):
 				break				
 	else:
 		return False
-def start10(string):
-	output = []
-	for i in range(2,11):
-		output.append(string[:i])
-	return output
 	
 
 if __name__=="__main__":
