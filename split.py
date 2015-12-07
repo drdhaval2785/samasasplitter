@@ -38,7 +38,7 @@ def createhwlist(dictname):
 	global sanhw2
 	sanhw2 = sanhw2()
 	sanhw2 = sorted(sanhw2, key=lambda x: (len(x[1]),len(x[0])), reverse=True)
-	fout = codecs.open('hwsorted.txt','w','utf-8')
+	fout = codecs.open('dicts/hwsorted.txt','w','utf-8')
 	hw = []
 	for (hword,dicts,lnums) in sanhw2:
 		if len(hword) > 1 and dictname in dicts:
@@ -48,7 +48,9 @@ def createhwlist(dictname):
 	print len(hw)
 	print "Created headword data of sanhw2.txt"
 #createhwlist('MD')
-
+def readwords(dictionary):
+	return open(dictionary).read().split()
+	
 def unique(lst):
 	output = []
 	for member in lst:
@@ -57,9 +59,6 @@ def unique(lst):
 	return output
 
 # Asked the procedure at http://stackoverflow.com/questions/34108900/optionally-replacing-a-substring-python
-lstrep = [('A',('A','aa','aA','Aa','AA')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO'))]	
-global solutions
-solutions = {}
 def permut(word,lstrep,dictionary):
 	input_str = word
 
@@ -99,40 +98,14 @@ def determ(word):
 			if re.search(a+'$',word):
 				output.append(re.sub(a+'$',b,word))
 	return output
-"""
-def allngrams(input):
-	output = []
-	for n in range(2,len(input)):
-		for i in range(len(input)-n+1):
-			output.append(input[i:i+n])
-	return output
-def matchingngrams(ngrams,dictionary):
-	return [ngram for ngram in ngrams if ngram in dictionary]
-def trysplit(input,dictionary):
-	matchedngrams = matchingngrams(allngrams(input),dictionary)
-	startngrams = []
-	for ngram in matchedngrams:
-		if input.startswith(ngram):
-			startngrams.append(ngram)
-	startngrams = sorted(startngrams, key=len, reverse=True)
-	for ngram in startngrams:
-		remaining = input[len(ngram):]
-		if (len(remaining) > 2 or remaining in ['tA']) and remaining in dictionary:
-			return ngram+'+'+remaining
-			break
-		elif (len(remaining) > 2 or remaining in ['tA']):
-			return ngram+'+'+trysplit(input[len(ngram):],dictionary)
-			break
-	else:
-		return input+'(WRONG)'
-"""
+
 #http://stackoverflow.com/questions/8870261/how-to-split-text-without-spaces-into-list-of-words/11642687#11642687
 from math import log
 
-words = open('hwsorted.txt').read().split()
-wordcost = dict((k, log((i+1)*log(len(words)))) for i,k in enumerate(words)) 
-maxword = max(len(x) for x in words)
-def infer_spaces(s):
+def infer_spaces(s,dictionary):
+    words = open(dictionary).read().split()
+    wordcost = dict((k, log((i+1)*log(len(words)))) for i,k in enumerate(words)) 
+    maxword = max(len(x) for x in words)
     """Uses dynamic programming to infer the location of spaces in a string
     without spaces."""
     # Build a cost dictionary, assuming Zipf's law and cost = -math.log(probability).
@@ -169,43 +142,21 @@ def infer_spaces(s):
         reply = reply.rstrip('+')
     return reply
     #return "+".join(reversed(out))
-
-def trypartition(word,dictionary):
-	dedup = deduplicate(word)
-	deter = determ(word)
-	deterdedup = determ(dedup)
-	checklist = [word] + [dedup] + deter + deterdedup
-	checklist = list(set(checklist))
-	output = []
-	for word in checklist:
-		for i in xrange(len(word)):
-			if word[:i] in dictionary and word[i:] in dictionary:
-				return True
-				break
-			elif word[:i].endswith('eH') and word[:i-2]+'i' in dictionary and word[i:] in dictionary: # aditeHputra
-				return True
-				break
-			elif word[:i] in dictionary and (word[i:-1]+'A' in dictionary or word[i:-1]+'I' in dictionary):	#anuzwubgarBA
-				return True
-				break
-			elif infer_spaces(word,dictionary) is not False:
-				return True
-				break				
-	else:
-		return False
 	
-
 if __name__=="__main__":
-	print timestamp()
+	lstrep = [('A',('A','aa','aA','Aa','AA')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO'))]
+	dictionary = 'dicts/hwsorted.txt'
+	if len(sys.argv) == 3:
+		dictionary = 'dicts/'+sys.argv[2]+'.txt'
+	inputword = sys.argv[1]
+	words = readwords(dictionary)
+	global solutions
+	solutions = {}
 	perm = permut(sys.argv[1],lstrep,words)
-	print len(perm)
-	print timestamp()
-	#inputword = sys.argv[1]
 	output = []
 	for mem in perm:
-		split = infer_spaces(mem)
+		split = infer_spaces(mem,dictionary)
 		if split is not False:
-			output.append(infer_spaces(mem))
+			output.append(split)
 	output = sorted(output,key=len)
 	print output[:5]
-	print timestamp()

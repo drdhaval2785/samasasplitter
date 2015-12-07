@@ -1,9 +1,16 @@
 # Execution
-`python split.py <wordInSLP1>`
+`python split.py <wordInSLP1> [<dictname>]`
 
 e.g.
 
 `python split.py DavaleSvarapriya`
+
+or 
+
+`python split.py DavaleSvarapriya MD`
+
+## Dictnames
+dictionaryname = ["ACC","CAE","AE","AP90","AP","BEN","BHS","BOP","BOR","BUR","CCS","GRA","GST","IEG","INM","KRM","MCI","MD","MW72","MW","MWE","PD","PE","PGN","PUI","PWG","PW","SCH","SHS","SKD","SNP","STC","VCP","VEI","WIL","YAT","ALL"]
 
 # output 
 
