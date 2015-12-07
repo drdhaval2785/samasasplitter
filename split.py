@@ -145,7 +145,7 @@ def infer_spaces(s,dictionary):
 	
 if __name__=="__main__":
 	lstrep = [('A',('A','aa','aA','Aa','AA')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO'))]
-	dictionary = 'dicts/hwsorted.txt'
+	dictionary = 'dicts/MD.txt'
 	if len(sys.argv) == 3:
 		dictionary = 'dicts/'+sys.argv[2]+'.txt'
 	inputword = sys.argv[1]
