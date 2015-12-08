@@ -34,3 +34,8 @@ If you want all results, replace `print output[:5]` line with `print output`.
 	3.2. In decreasing order of length of the words. Longest words are sorted first. Shortest ones at the end.
 
 	3.3. If the above two conditions are satisfied, they are sorted in alphabetic order.
+
+# Further projects
+
+Analyse Sanskrit headwords from Cologne dictionaries and separate the headwords which have compounds.
+See compoundstudy.py and compoundstudy/compoundhw.py
