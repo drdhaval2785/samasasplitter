@@ -3,6 +3,7 @@ import sys, re, codecs, string, datetime, itertools
 from lxml import etree
 from io import StringIO, BytesIO
 from math import log
+import collections
 	
 def unique(lst):
 	output = []
@@ -113,28 +114,29 @@ def mwcomponentdata():
 	out = [member.text for member in mw.xpath('/mw/*/h/key2')]
 	fout = codecs.open('dicts/mwb.txt','w','utf-8')
 	print len(out)
-	output = set(out)
-	output.remove(None)
-	output = list(output)
-	print len(output)
 	samasamembers = []
-	for i in xrange(len(output)):
-		member = mwstrip(output[i])
-		parts = member.split('-')
-		for mem in parts:
-			if len(mem) > 1:
-				samasamembers.append(mem)
-	samasamembers = list(set(samasamembers))
-	print len(samasamembers)
-	for mem in samasamembers:
-		fout.write(mem+"\n")
+	for i in xrange(len(out)):
+		member = out[i]
+		if member is not None:
+			member = mwstrip(member)
+			parts = member.split('-')
+			for mem in parts:
+				if len(mem) > 1:
+					samasamembers.append(mem)
+	count = collections.Counter(samasamembers)
+	count = count.most_common()
+	count = sorted(count, key=lambda x:(x[1],len(x[0])),reverse=True)
+	for (a,b) in count:
+		fout.write(a+"\n")
 	print "Completed adding data to mwb.txt"
 	fout.close()
 
 if __name__=="__main__":
+	"""
 	sanhw2 = sanhw2()
 	sanhw2 = sorted(sanhw2, key=lambda x: (len(x[1]),len(x[0])), reverse=True)
 	colognedata()
 	gerarddata()
+	"""
 	mwcomponentdata()
 	

@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 """
+Usage
+python compoundstudy.py <dictname>
+e.g.
+python compoundstudy.py mwb
+
 Read data from sanhw2.txt and compare it against
 dictionary MD.
 When a word is possibly a compound, it is stored in 
@@ -42,7 +47,7 @@ if __name__=="__main__":
 	sanhw2 = sp.sanhw2()
 	print "Created sanhw2 data"
 	fout = codecs.open('compoundstudy/compoundhw.txt','w','utf-8')
-	dictionary = 'dicts/MD.txt'
+	dictionary = 'dicts/mwb.txt'
 	if len(sys.argv) == 2:
 		dictionary = 'dicts/'+sys.argv[1]+'.txt'
 	for (word,dicts,lnums) in sanhw2:
