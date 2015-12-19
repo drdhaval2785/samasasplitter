@@ -126,6 +126,7 @@ akUpAra
 anyatra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -255,7 +256,6 @@ dunduBi
 nandana
 prakASa
 pravara
-brahman
 maRqUka
 maDyama
 Sambara
@@ -2550,6 +2550,7 @@ vyaTA
 vyAja
 vyADa
 Satru
+SanEs
 SaSin
 Sasya
 SAKin
@@ -2995,6 +2996,7 @@ grAmin
 cawaka
 cawula
 cIvara
+cUcuka
 janitf
 jaraWa
 jasuri
@@ -3208,7 +3210,6 @@ vyasu
 vyUQa
 vraSc
 Sakya
-SanEs
 Sazpa
 SAyin
 SAlin
@@ -3718,7 +3719,6 @@ gOrava
 carman
 cAtaka
 cApala
-cUcuka
 Cagala
 jaGana
 jAlaka
@@ -3990,7 +3990,9 @@ KAd
 gad
 gAh
 gur
+Guz
 cam
+cud
 cup
 Cuw
 Cur
@@ -4520,7 +4522,6 @@ cat
 can
 cAy
 cuw
-cud
 cur
 cUz
 jap
@@ -4999,7 +5000,6 @@ kUl
 kfz
 Kac
 Kad
-Guz
 taw
 tur
 tul
@@ -5518,6 +5518,7 @@ nirudvigna
 paripraSna
 parivartin
 puzkarAkza
+pratibimba
 vasuDADara
 saptaparRa
 samudIraRa
@@ -5963,7 +5964,6 @@ puRyaganDa
 pfTivIkzit
 pfTivIpati
 pratidinam
-pratibimba
 viparItatA
 SradDAmaya
 akftAtman

@@ -111,6 +111,7 @@ upanizad
 akUpAra
 anyatra
 praDAna
+brahman
 maRqala
 rAkzasa
 SramaRa
@@ -198,7 +199,6 @@ nandana
 nirukta
 prakASa
 pravara
-brahman
 maDyama
 Sambara
 sEnDava
@@ -2158,6 +2158,7 @@ vfnda
 vedya
 vyaTA
 Sakta
+SanEs
 SamyA
 SaSin
 Sasya
@@ -2929,7 +2930,6 @@ vyasu
 vyUQa
 vraSc
 Sakya
-SanEs
 Samba
 SAyin
 SAlin
@@ -3878,7 +3878,9 @@ KAd
 gad
 gAh
 gur
+Guz
 cam
+cud
 cup
 Cuw
 Cur
@@ -4756,7 +4758,6 @@ cat
 can
 cAy
 cuw
-cud
 cur
 cUz
 jap
@@ -4871,6 +4872,7 @@ apasalavi
 apasmArin
 aprakfzwa
 abrAhmaRa
+aBikANkzA
 aByarcana
 avaroDaka
 avalambin
@@ -5443,6 +5445,7 @@ sTAnin
 spfzwa
 smArta
 sravat
+srazwf
 srasta
 svErin
 hAlinI
@@ -5682,7 +5685,6 @@ kUl
 kfz
 Kac
 Kad
-Guz
 Jyu
 taw
 tur
@@ -5819,7 +5821,6 @@ aparyanta
 apavArita
 apracetas
 aprasidDa
-aBikANkzA
 aBivyakta
 avakIrRin
 avaboDaka
@@ -6530,7 +6531,6 @@ sTUrin
 spfkkA
 spfSya
 syanna
-srazwf
 svArAj
 hasita
 hAPikA
@@ -7423,6 +7423,7 @@ ciratna
 cuYcurI
 cyavAna
 Cidvara
+jampatI
 jAgarin
 jyotsnI
 jvalakA
@@ -8208,6 +8209,7 @@ agu
 awa
 aqq
 ayA
+ABu
 ArU
 Ava
 iNg
@@ -9900,7 +9902,6 @@ aRW
 aBI
 asU
 ADI
-ABu
 izi
 und
 enA
@@ -10721,6 +10722,7 @@ uzRiman
 uzRIzin
 fBukzin
 evAvada
+Oqupika
 OdBijja
 OpAyika
 kaqaNga
@@ -10744,7 +10746,6 @@ gfhyaka
 caYcukA
 candrin
 cinmaya
-jampatI
 jaraRqa
 jarBari
 jYapita
@@ -13476,6 +13477,7 @@ kallolinI
 kuRqalikA
 kzamaRIya
 gaqqarikA
+candanIyA
 cAtuzwaya
 cAndanika
 cikIrzaka
@@ -14771,9 +14773,11 @@ upasamAhArya
 upASaMsanIya
 Ekasahasrika
 OpakurvARaka
+cAturTAhnika
 parirakzitin
 pratikuYcita
 pratinirjita
+pratibimbita
 prativiSizwa
 prayojanavat
 musalAmusali
@@ -16279,14 +16283,12 @@ aSitaMgavIna
 ASitaMgavIna
 utpacanipacA
 udakeviSIrRa
-cAturTAhnika
 cAndrAyaRika
 nizkramaRikA
 parisaMKyAta
 paryavasTAtf
 paryavasTita
 pAratantrika
-pratibimbita
 pratyASvasta
 pravartayitf
 prAyaScittin
@@ -16693,6 +16695,7 @@ aByatIta
 aByavahf
 aByastam
 aByutpat
+araMGuza
 araRyIya
 aryamika
 alopANga
@@ -25932,7 +25935,6 @@ granTikaH
 grAmayati
 GawiGawaH
 canasyati
-caMdanIyA
 candrakaH
 candrilaH
 cAmarikaH
@@ -29299,6 +29301,7 @@ aBUH
 aByu
 aluk
 AKaH
+ApiH
 AviH
 ASiH
 ASco
@@ -30583,7 +30586,6 @@ saMmuKIkfta
 sAMvAsyakam
 sAMsrAviRam
 sAmaYjasyam
-sArvaMBOmam
 sArvavidyam
 sidDArTakaH
 sImantayati
@@ -31636,6 +31638,7 @@ sApatnakam
 sApASrayam
 sAmIcInyam
 sAmudrakam
+sArvaBOmam
 sArvasahaH
 sAzwardyam
 sAhacaryam
@@ -32831,7 +32834,6 @@ ayantram
 ayAnayam
 ayAvanam
 ayudDavI
-araMDuza
 aramuqiH
 arAzwram
 alaMkiyA
@@ -33044,7 +33046,6 @@ EkAntyam
 EkArTyam
 ojAyitam
 OkTikyam
-OqupiMka
 OqulomiH
 Otsukyam
 OdArikam
@@ -35932,7 +35933,6 @@ AkuS
 AKya
 AgUr
 AcCA
-ApiH
 Amli
 ArDA
 Aska

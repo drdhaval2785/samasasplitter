@@ -135,6 +135,7 @@ akUpAra
 anyatra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -277,7 +278,6 @@ nandana
 nirukta
 prakASa
 pravara
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -3276,6 +3276,7 @@ vyADa
 vyAna
 Sakta
 Satru
+SanEs
 SamyA
 SaSin
 Sasya
@@ -4007,6 +4008,7 @@ grEzma
 cawaka
 cawula
 cIvara
+cUcuka
 Cardis
 Cidura
 jawAla
@@ -4444,7 +4446,6 @@ vyUQa
 vrIqa
 vrIhi
 Sakya
-SanEs
 Samba
 Salka
 Sazpa
@@ -5341,7 +5342,6 @@ cazAla
 cAtaka
 cAndra
 cApala
-cUcuka
 cOrikA
 Cagala
 Cedana
@@ -7397,6 +7397,7 @@ apalAzikA
 apasalavi
 apasmArin
 aprakfzwa
+aBikANkzA
 aByutTAna
 avatamasa
 avanejana
@@ -8499,6 +8500,7 @@ sTOlya
 snAyin
 spfzwa
 sravat
+srazwf
 srasta
 svasTa
 svAnta
@@ -8732,6 +8734,7 @@ pAdU
 pfTa
 Bala
 BARa
+BIti
 Bfmi
 maga
 masi
@@ -8975,7 +8978,6 @@ aparicita
 apavArita
 aprasidDa
 aprAmARya
-aBikANkzA
 aBivyakta
 aByaYjana
 avakIrRin
@@ -10332,7 +10334,6 @@ sTUrin
 spfkkA
 spfSya
 syanna
-srazwf
 svArAj
 svArTa
 hasana
@@ -10586,7 +10587,6 @@ peza
 pyAw
 Peru
 BiyA
-BIti
 BIlu
 BUpa
 Beri
@@ -11772,6 +11772,7 @@ cuYcurI
 cezwana
 Cardana
 Cidvara
+jampatI
 jamBIra
 jalOkas
 jalpana
@@ -13066,6 +13067,7 @@ viSvavedas
 viSveSvara
 vizamAyuDa
 vizRugupta
+visPuliNga
 vfzotsarga
 vyatizakta
 vyatizaNga
@@ -16011,6 +16013,7 @@ abDidvIpA
 aBimAnita
 aBilAzuka
 aByarTita
+arkaparRa
 arTasidDa
 arTAntara
 avakalita
@@ -17338,6 +17341,7 @@ ekayoni
 ekIBAva
 etAdfSa
 elavila
+Oqupika
 OdBijja
 kakanda
 kaNkeru
@@ -17478,7 +17482,6 @@ jaNgula
 janAnta
 jantulA
 janmada
-jampatI
 jambUla
 jaraRqa
 jaranta
@@ -19975,7 +19978,6 @@ amftarasa
 amftAnDas
 arikTaBAj
 aruRopala
-arkaparRa
 arkabanDu
 arTApatti
 alpameDas
@@ -21864,7 +21866,6 @@ ekaSAKa
 eqagaja
 okodanI
 ozaDISa
-Oqupika
 kaMsaka
 kaMsIya
 kaNgunI
@@ -35834,6 +35835,7 @@ durgasaYcara
 durgASrayaRa
 dUravastraka
 dUrasaMsTAna
+devavardDaki
 devAnAmpriya
 dozaprasaNga
 dyUtADikArin
@@ -36972,6 +36974,7 @@ kftopaBoga
 kfzRaSimbI
 kfzRASrita
 keSagfhIta
+keSapaNkti
 kEtavavAda
 komalagIta
 kozaSAyikA
@@ -37080,6 +37083,7 @@ tamaHsTita
 tamaskalpa
 taruRIgaRa
 taruRIjana
+tarupaNkti
 taruviwapa
 tArADipati
 tiktapatra
@@ -40388,7 +40392,6 @@ dArasaNgraha
 dAruputtrikA
 dIrGapatraka
 devaKAtavila
-devavardDaki
 dvandvacArin
 dvandvaduHKa
 dvandvaBinna
@@ -40619,6 +40622,7 @@ aBiSastANka
 amaraRIyatA
 ameDyalipta
 ayatnakArin
+arjunacCavi
 arTavEkalpa
 ardDanArISa
 ardDamARava
@@ -41132,7 +41136,6 @@ kftakAryya
 kfzRaSrita
 kfzRArccis
 ketuvasana
-keSapaNkti
 kEvarttaka
 kozanAyaka
 kozADyakza
@@ -43046,7 +43049,6 @@ apawukaraRa
 ambukaRWaka
 ayAtapUrvva
 aruntudatva
-arjunacCavi
 ardDaBAgika
 aryyaryyARI
 upagatavata
@@ -43185,7 +43187,6 @@ caturmmuKa
 carmmAvfta
 cAturmmAsa
 tatastatas
-tarupaMkti
 tizyapuzpa
 dAnavarzin
 dAsIputtra
@@ -43254,7 +43255,6 @@ vizamaCada
 vizamaCAyA
 vizuvaCAyA
 visambAdin
-visPuliMga
 vfhatipati
 vfhaddyuti
 SAkavAleya

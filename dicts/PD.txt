@@ -5246,6 +5246,7 @@ aDirUQaka
 aDivapana
 aDivarcas
 aDivAsanA
+aDihastya
 aDogamana
 aDyakzatA
 aDyupekzA
@@ -7059,7 +7060,6 @@ aDirAjatA
 aDivikram
 aDiSayana
 aDistanam
-aDihastya
 aDItarasa
 aDonayana
 aDonivIta
@@ -50832,7 +50832,6 @@ anaBiSaNkanIya
 anaBizvaNgavat
 anaBisaMtyajya
 anaBisaMDikfta
-anaBisaMDimant
 anaBisaMnyasya
 anaBisamplutya
 anaBihitakartf
@@ -60029,6 +60028,7 @@ anaBizutalatA
 anaBizecanIyA
 anaBisaMskfti
 anaBisaMDitas
+anaBisaMDimat
 anaBisamittva
 anaBisamIkzya
 anaBisaMbanDa
@@ -67027,7 +67027,6 @@ atipriyatamA
 atipriyadfta
 atiprItikara
 atiprItipara
-atiprItimant
 atiprItiyuta
 atipremabala
 atipremArdra
@@ -77020,6 +77019,7 @@ atiprAjYatA
 atiprADAnya
 atipriyakft
 atipriyatva
+atiprItimat
 atipreNKita
 atipremavat
 atiprEzAnta

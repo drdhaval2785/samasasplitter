@@ -133,6 +133,7 @@ akUpAra
 anyatra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -272,7 +273,6 @@ nandana
 nirukta
 prakASa
 pravara
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -3249,6 +3249,7 @@ vyAja
 vyADa
 vyAna
 Sakta
+SanEs
 SamyA
 Sarva
 SaSin
@@ -4375,7 +4376,6 @@ vyUQa
 vrIqa
 vrIhi
 Sakya
-SanEs
 Samba
 Salka
 Sazpa
@@ -7173,6 +7173,7 @@ apasalavi
 apasmArin
 aprakfzwa
 abrAhmaRa
+aBikANkzA
 aByarcana
 aByutTAna
 avatamasa
@@ -8162,6 +8163,7 @@ stanya
 sTAnin
 sTOlya
 spfzwa
+srazwf
 srasta
 svasTa
 svAnta
@@ -8395,6 +8397,7 @@ pfTa
 bisa
 Bala
 BARa
+BIti
 Bfmi
 maga
 maGA
@@ -8629,7 +8632,6 @@ apavArita
 apracetas
 aprasidDa
 aprAmARya
-aBikANkzA
 aBivyakta
 aBizvaNga
 aByaYjana
@@ -9822,7 +9824,6 @@ sTUrin
 spanda
 spfkkA
 syanna
-srazwf
 svArAj
 svArTa
 hasana
@@ -9893,6 +9894,7 @@ Endri
 kaPin
 kaSya
 kAkza
+kARva
 kulPa
 kxpta
 kOntI
@@ -10098,7 +10100,6 @@ peSa
 peza
 pyAw
 Peru
-BIti
 BIlu
 BUpa
 Beri
@@ -11164,6 +11165,7 @@ cetizWa
 cEtyaka
 cyavAna
 Cidvara
+jampatI
 jamBIra
 jalOkas
 jalpana
@@ -11833,7 +11835,6 @@ kawin
 kantu
 karbu
 kahva
-kARva
 kAtya
 kAlpa
 kukza
@@ -12111,6 +12112,7 @@ agu
 awa
 alu
 Aqi
+ABu
 ArU
 IqA
 Iha
@@ -12410,6 +12412,7 @@ meGavAhana
 viSvavedas
 vizamAyuDa
 vizRugupta
+visPuliNga
 vfzotsarga
 vyatizakta
 vyatizaNga
@@ -14626,7 +14629,6 @@ asU
 asO
 AtA
 Api
-ABu
 izi
 uKA
 ema
@@ -15113,7 +15115,6 @@ vinDyAwavI
 vipracitti
 viSalyakft
 viSvakadru
-visPuliNga
 vfzavAhana
 vedapAraga
 vyaqambaka
@@ -15210,6 +15211,7 @@ aBivarzin
 aBivimAna
 aByarTita
 aByAGAtin
+arkaparRa
 arTasidDa
 arTAntara
 avakalita
@@ -16373,6 +16375,7 @@ ekadeSa
 ekaBAva
 ekayoni
 evAvada
+Oqupika
 OdBijja
 kakanda
 kakzeyu
@@ -16508,7 +16511,6 @@ jaNgula
 janAnta
 jantulA
 janmada
-jampatI
 jambUla
 jayantI
 jayizRu
@@ -18848,7 +18850,6 @@ amftAnDas
 arikTaBAj
 arimejaya
 aruRopala
-arkaparRa
 arkabanDu
 arTApatti
 alpameDas
@@ -20496,7 +20497,6 @@ eqagaja
 ezwavya
 EkAtmya
 ojasIna
-Oqupika
 OpADika
 kaMsaka
 kakzaka
@@ -24108,6 +24108,7 @@ caturaSra
 caturvaya
 catuzkoRa
 catUrAtra
+candanIyA
 candrAMSu
 campApurI
 carusTAlI
@@ -28073,7 +28074,6 @@ cakranABi
 cakrAyuDa
 caRqabala
 caturTikA
-candanIyA
 campADipa
 caruvraRa
 cAkaciccA
@@ -30197,6 +30197,7 @@ jalamUrttikA
 jahnusaptamI
 tiktataRqulA
 tucCaDAnyaka
+trapukarkawI
 tridaSeSvara
 tridivodBavA
 triDArasnuhI
@@ -30699,6 +30700,7 @@ raktAtisAra
 ranDravaMSa
 ramBAtftIyA
 rasasindUra
+rAjakarkawI
 rAtrisattra
 rAvaRagaNgA
 lakzmIkAnta
@@ -34628,7 +34630,6 @@ tAlarecanaka
 turagadAnava
 turagalIlaka
 turaNgapriya
-trapukarkawI
 triMSatpatra
 trEvizwapeya
 dakziRamArga
@@ -34650,6 +34651,7 @@ dIrGavarzABU
 durAQyamBava
 durgasaYcara
 dfzadimAzaka
+devavardDaki
 devasyatvaka
 deSIyavarAqI
 dErGavaratra
@@ -35373,7 +35375,6 @@ raRqASramin
 ranDrakaRwa
 rasakarpUra
 rAgaprasava
-rAjakarkawI
 rAjakzavaka
 rAjaKarjUrI
 rAjapalARqu
@@ -39650,7 +39651,6 @@ dAmanaparvan
 dIrGakaRwaka
 dfzwiviBrama
 devacCandasa
-devavardDaki
 devIBAgavata
 devIrApasaka
 drupadAditya

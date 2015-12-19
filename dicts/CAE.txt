@@ -134,6 +134,7 @@ akUpAra
 anyatra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -274,7 +275,6 @@ nandana
 nirukta
 prakASa
 pravara
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -3290,6 +3290,7 @@ vyADa
 vyAna
 Sakta
 Satru
+SanEs
 SamyA
 Sarva
 SaSin
@@ -4045,6 +4046,7 @@ grEzma
 cawaka
 cawula
 cIvara
+cUcuka
 Cardis
 Cidura
 jawAla
@@ -4486,7 +4488,6 @@ vraSc
 vrIqa
 vrIhi
 Sakya
-SanEs
 Samba
 Salka
 Sazpa
@@ -6033,7 +6034,9 @@ KAd
 gad
 gAh
 gur
+Guz
 cam
+cud
 cup
 Cuw
 Cur
@@ -7480,7 +7483,6 @@ cat
 can
 cAy
 cuw
-cud
 cur
 cUz
 jap
@@ -7624,6 +7626,7 @@ aparivfta
 apasalavi
 apasmArin
 abrAhmaRa
+aBikANkzA
 aByarcana
 aByutTAna
 avanejana
@@ -8651,6 +8654,7 @@ snAyin
 spfzwa
 smArta
 sravat
+srazwf
 srasta
 svasTa
 svAnta
@@ -8885,6 +8889,7 @@ baMh
 bisa
 Bala
 BARa
+BIti
 Bfmi
 Byas
 maMh
@@ -8945,7 +8950,6 @@ kUl
 kfz
 Kac
 Kad
-Guz
 taw
 tur
 tul
@@ -10261,7 +10265,6 @@ sOvida
 stEnya
 spanda
 spfSya
-srazwf
 svArTa
 hasana
 hasita
@@ -10302,6 +10305,7 @@ udaYc
 UzaRa
 ekatA
 ekEka
+kARva
 kulPa
 kxpta
 kOnda
@@ -10709,6 +10713,7 @@ pracyavana
 prajvalita
 pratigrAha
 praticCAyA
+pratibimba
 pratilamBa
 prativastu
 pratIkzaRa
@@ -11911,7 +11916,6 @@ ekAha
 ESAna
 ogaRa
 karbu
-kARva
 kfzwa
 krIqi
 krumu
@@ -12131,6 +12135,7 @@ himA
 agu
 ayA
 arG
+ABu
 Ava
 inv
 ima
@@ -12332,7 +12337,6 @@ pratijanya
 pratidinam
 pratipriya
 pratibadDa
-pratibimba
 pratibudDa
 pratimalla
 pratiroDin
@@ -17954,6 +17958,7 @@ haYjikA
 havIman
 huMkAra
 hfdgata
+hEqimba
 hEraRya
 hrezuka
 akriyA
@@ -18308,6 +18313,7 @@ ozaDI
 Ogrya
 kIsta
 kumba
+krakz
 kloSa
 kvala
 kzEta
@@ -18387,6 +18393,7 @@ maDus
 mandu
 mahan
 mahin
+mAkis
 mAkIm
 mindA
 muNga
@@ -20592,7 +20599,6 @@ svAhuta
 havirad
 hiMsita
 himAdri
-hEqimba
 hotavya
 aganDa
 agfhya
@@ -21004,7 +21010,6 @@ kUrmi
 kUlya
 komya
 kOzWa
-krakz
 kzAti
 gADin
 gfYja
@@ -21067,7 +21072,6 @@ maRqu
 maTra
 mamat
 mamma
-mAkis
 miSla
 mUrDa
 yavan
@@ -21391,6 +21395,7 @@ puzkarAraRya
 pUrvasamudra
 pratikramaRa
 pratidivasam
+pratibimbita
 pratyavarUQi
 pratyavaroha
 praTamakalpa
@@ -23215,6 +23220,7 @@ mitAhAra
 muKagata
 muKaBeda
 mudrANka
+mfLayAku
 mfgarAja
 meGadUta
 merukUwa
@@ -24973,7 +24979,6 @@ pUjopakaraRa
 pUrvArDakAya
 pragrahavant
 pracayasvara
-pratibimbita
 pratisaMdeSa
 prayatnavant
 prasaNgavant
@@ -26170,6 +26175,7 @@ svastimant
 hatajIvita
 harivarpas
 hariSarman
+havirAhuti
 haviryajYa
 hastagraha
 hastagrAha
@@ -26518,6 +26524,7 @@ pARibanDa
 pARquroga
 pAdanyAsa
 pAdarajas
+pAzaRqatA
 piRqamaya
 pitfkArya
 pitfvrata
@@ -27607,7 +27614,6 @@ munivana
 muradviz
 mUjavant
 mUrDatas
-mfLayAku
 mfgavana
 mfgaSAva
 mfgADipa
@@ -28124,6 +28130,7 @@ gUQArTa
 gobanDu
 goyukta
 grahaka
+Garmita
 GftasnA
 Gftasnu
 carmaja
@@ -29113,6 +29120,7 @@ vew
 syU
 ed
 Sf
+kacawatapagajaqadaba
 dvAtriMSallakzaRika
 SvetASvataropanizad
 indrAbrahmaRaspati
@@ -31019,7 +31027,6 @@ pAdArpaRa
 pAnaBARqa
 pApabanDa
 pASakaRWa
-pAzaRqatA
 pitfkftya
 pitfvaMSa
 pipizvant
@@ -31711,6 +31718,7 @@ jIvavaDa
 jUtimant
 jYaptika
 jYAnatas
+JaMkArin
 tatkArin
 taTABAva
 tadvayas
@@ -32632,6 +32640,7 @@ sraktya
 svaguRa
 svajAta
 svajita
+svaDIti
 svapada
 svapnAy
 svAdAna
@@ -33030,7 +33039,6 @@ hAr
 tf
 paYcadaRqacCattraprabanDa
 jYAnecCAkriyASaktimant
-kacawatapagajaqadaba
 viDimantrapuraskftam
 vetAlapaYcaviMSatikA
 cOrIsuratapaYcASikA
@@ -33527,6 +33535,7 @@ evaMprakAra
 kaWoracitta
 kamalanetra
 karuRaDvani
+kalakaRWikA
 kaluzacetas
 kAntAraBava
 kAryaDvaMsa
@@ -34682,7 +34691,6 @@ jayaGoza
 javIyaMs
 jAtabala
 jYAnAgni
-JaMkArin
 JaRaJaRa
 tatomuKa
 tattulya
@@ -35137,7 +35145,6 @@ snuzAga
 spandyA
 sPArIBU
 syanttf
-svaDIti
 svAsana
 svedayu
 hastIkf
@@ -36740,6 +36747,7 @@ GArmAmbu
 camUpAla
 ciravAsa
 cUtaSara
+CinnABra
 japApIqa
 jalahIna
 jAnakISa
@@ -37322,7 +37330,6 @@ ESvaryamatta
 kamalinIdala
 karavIradAma
 karRopaGAtin
-kalakaRWiMkA
 kAraRaSarira
 kAryaSezaYja
 kAlapakvaBuj
@@ -37546,7 +37553,6 @@ supariSAnta
 sOptikavaDa
 svayaMSezWa
 hayattattva
-havirAhuMti
 aganDavant
 agniSuSUzA
 agrayaRaka
@@ -37569,7 +37575,6 @@ aparANmUKa
 apariSAnta
 amftakalpa
 amftavarti
-aMBikANkzA
 arDavAcita
 avagatArTa
 avaDyaBAva
@@ -37987,7 +37992,6 @@ KagaDipa
 gatipaTa
 galaguhA
 gurusuta
-GarmiMta
 GArmArta
 candanay
 camUgati
@@ -37995,7 +37999,6 @@ citrADas
 cuqAmaRi
 cUqApIqa
 CAyAtapa
-CinnABra
 jyEzWaya
 tagDArDa
 tadyukta
@@ -38147,7 +38150,6 @@ kzIroDi
 kzvaNkA
 goarnas
 GarmAnt
-cUcuMka
 cElavat
 jaNGala
 jaqisan
@@ -38392,7 +38394,6 @@ tugya
 todra
 PUtkf
 Basas
-BIMti
 miSay
 mfdBa
 mODya
@@ -38411,7 +38412,6 @@ sPaya
 hUMkf
 adyA
 ahva
-AMBu
 gEva
 TUrv
 paBu

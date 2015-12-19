@@ -135,6 +135,7 @@ akUpAra
 anyatra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -276,7 +277,6 @@ nandana
 nirukta
 prakASa
 pravara
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -3129,6 +3129,7 @@ vyADa
 vyAna
 Sakta
 Satru
+SanEs
 SamyA
 Sarva
 SaSin
@@ -3782,6 +3783,7 @@ grEzma
 cawaka
 cawula
 cIvara
+cUcuka
 Cidura
 jawAla
 janitf
@@ -4186,7 +4188,6 @@ vraSc
 vrIqa
 vrIhi
 Sakya
-SanEs
 Samba
 Salka
 Sazpa
@@ -4983,7 +4984,6 @@ cazAla
 cAtaka
 cAndra
 cApala
-cUcuka
 cOrikA
 Cagala
 Cedana
@@ -5523,7 +5523,9 @@ KAd
 gad
 gAh
 gur
+Guz
 cam
+cud
 cup
 Cuw
 Cur
@@ -6639,7 +6641,6 @@ cat
 can
 cAy
 cuw
-cud
 cur
 cUz
 jap
@@ -6744,6 +6745,7 @@ anapasara
 anavasara
 anvavekzA
 abrAhmaRa
+aBikANkzA
 aByarcana
 avatamasa
 avanejana
@@ -7358,6 +7360,7 @@ sTOlya
 snAyin
 spfzwa
 smArta
+srazwf
 svasTa
 svErin
 akava
@@ -7556,6 +7559,7 @@ baMh
 bisa
 Bala
 BARa
+BIti
 Bfmi
 Byas
 BraS
@@ -7620,7 +7624,6 @@ kUl
 kfz
 Kac
 Kad
-Guz
 taw
 tur
 tul
@@ -7724,7 +7727,6 @@ antarhAsa
 aparyanta
 apracetas
 aprAmARya
-aBikANkzA
 aBivyakta
 aBizvaNga
 avakIrRin
@@ -8342,7 +8344,6 @@ sopAka
 stEnya
 spanda
 syanna
-srazwf
 svArTa
 heruka
 hErika
@@ -8389,6 +8390,7 @@ uroja
 ekEka
 Endri
 kANkz
+kARva
 kOnda
 kretf
 kzamA
@@ -8547,7 +8549,6 @@ Pull
 barh
 Band
 Barv
-BIti
 BEma
 mazi
 mAma
@@ -8690,6 +8691,7 @@ padmodBava
 paramAtman
 pAramezWya
 pracyavana
+pratibimba
 prAdurBAva
 prABavatya
 maDUcCizwa
@@ -9355,7 +9357,6 @@ Urjas
 ekAha
 ESAna
 karbu
-kARva
 krIqi
 krumu
 kvaTa
@@ -9547,6 +9548,7 @@ svAd
 himA
 ayA
 arG
+ABu
 Ava
 iNg
 inv
@@ -9641,7 +9643,6 @@ parizyanda
 paScAttApa
 pratipriya
 pratibadDa
-pratibimba
 pratyavara
 prAtastana
 prAtyayika
@@ -10571,7 +10572,6 @@ asO
 AtA
 ADI
 Api
-ABu
 izi
 INK
 und
@@ -12553,6 +12553,7 @@ okAra
 Ogrya
 kAMSi
 kekin
+krakz
 garda
 gUrti
 gotva
@@ -12598,6 +12599,7 @@ maDus
 mandu
 mahan
 mahin
+mAkis
 mAkIm
 mindA
 muNga
@@ -13688,7 +13690,6 @@ OkzRa
 kfzya
 kOzWa
 knaTa
-krakz
 gfYja
 goSva
 Gftya
@@ -13720,7 +13721,6 @@ BAsya
 maTan
 mamma
 mahya
-mAkis
 mADva
 miSla
 mUrDa
@@ -15939,6 +15939,7 @@ gamaDyE
 gocaryA
 gopitta
 gOzWika
+Garmita
 cakrIkf
 caNkuRa
 candalA
@@ -16444,6 +16445,7 @@ AN
 ed
 ko
 Sf
+kacawatapagajaqadaba
 aparAvfttaBAgaDeya
 vAtayantravimAnaka
 atisitANgavihaMga
@@ -17546,7 +17548,6 @@ koSavat
 ganDeBa
 garvAya
 GaRwika
-Garmita
 GUtkAra
 cakreSa
 caYcalA
@@ -17949,7 +17950,6 @@ him
 Ac
 se
 aDirukmamandiragavAkzam
-kacawatapagajaqadaba
 pratyakzaraSlezamaya
 kxptakeSanaKaSmaSru
 aviBUzaRaparicCada
@@ -19129,6 +19129,7 @@ yaR
 Sis
 Slu
 skf
+U~
 eN
 Ri
 SlizwaparaMparitarUpaka
@@ -20081,7 +20082,6 @@ nILa
 voca
 Saye
 ami
-UM~
 UzI
 Kar
 gaB

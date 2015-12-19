@@ -127,6 +127,7 @@ pArAvata
 akUpAra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -1511,6 +1512,7 @@ gaReSa
 gArgya
 giriSa
 gopati
+cUcuka
 jyEzWa
 tattva
 tAraRa
@@ -1732,7 +1734,6 @@ kosala
 Kaqgin
 gaRita
 gokula
-cUcuka
 jAWara
 tuzita
 darada
@@ -2194,6 +2195,7 @@ sudeva
 subAhu
 suvIra
 sOdAsa
+srazwf
 akara
 aDfta
 apagA
@@ -3083,6 +3085,7 @@ sahasrajit
 sahasradfS
 svargaloka
 anukarman
+arkaparRa
 AvedanIya
 indrasuta
 indrAnuja
@@ -3436,7 +3439,6 @@ sAgarAlaya
 sTUlaSiras
 syUmaraSmi
 arimejaya
-arkaparRa
 ahicCatra
 ApadDarma
 ugradaRqa
@@ -3648,6 +3650,7 @@ sammita
 supraBA
 suBadrA
 suSAnta
+hEqimba
 anantA
 amuKya
 ambupa
@@ -3667,6 +3670,7 @@ gomatI
 GaRwin
 civuka
 jaleyu
+jyezWA
 tfRaka
 tftIyA
 dfQAyu
@@ -4097,7 +4101,6 @@ sudezRa
 suDanus
 sumitrA
 suroman
-hEqimba
 ikzulA
 ekapad
 kamalA
@@ -7374,7 +7377,7 @@ varamAlyaganDavastra
 vidyutstanitagarjita
 vESravaRasaBAvarRana
 SItozRakzujjarADiDfk
-saMvatsarakaro4vatTa
+saMvatsarakaroSvatTa
 satyavatIlABopAKyAna
 sarvaprARizunityasTa
 sarvalakzaRalakzaRya
@@ -8515,7 +8518,6 @@ guhyakADipa
 govfzeSvara
 candrAvarta
 capalekzaRa
-cAsa4vaktra
 cedipuNgava
 cEdyADipati
 jagataHkoza
@@ -8768,6 +8770,7 @@ cakraDArin
 cakramaRqa
 cakzurAjya
 carmavAsas
+cAsavaktra
 CAgavaktra
 CinnatfzRa
 janaMejaya
@@ -9247,8 +9250,6 @@ ballavAH
 bahuDara
 bahuBUta
 bAheyika
-bra4hman
-brahma4n
 BAgakara
 BImasuta
 BImasUnu
@@ -9350,7 +9351,6 @@ girayaH
 gomArga
 GftapAH
 cAkzuzA
-jyez2TA
 tiwwiBa
 dambara
 dAsarha
@@ -9403,7 +9403,6 @@ sUdAman
 sUryAda
 sOBaraj
 sTAnada
-sraz2tf
 svaDfta
 akroSa
 aNkfti

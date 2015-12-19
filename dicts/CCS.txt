@@ -134,6 +134,7 @@ akUpAra
 anyatra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -272,7 +273,6 @@ nandana
 nirukta
 prakASa
 pravara
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -3177,6 +3177,7 @@ vyADa
 vyAna
 Sakta
 Satru
+SanEs
 SamyA
 Sarva
 Sasya
@@ -3870,6 +3871,7 @@ grEzma
 cawaka
 cawula
 cIvara
+cUcuka
 Cardis
 Cidura
 jawAla
@@ -5144,7 +5146,6 @@ carman
 cAtaka
 cAndra
 cApala
-cUcuka
 cOrikA
 Cagala
 Cedana
@@ -5718,7 +5719,9 @@ KAd
 gad
 gAh
 gur
+Guz
 cam
+cud
 cup
 Cuw
 Cur
@@ -6987,7 +6990,6 @@ cat
 can
 cAy
 cuw
-cud
 cur
 cUz
 jap
@@ -8165,6 +8167,7 @@ baMh
 bisa
 Bala
 BARa
+BIti
 Bfmi
 Byas
 maMh
@@ -8222,7 +8225,6 @@ kUl
 kfz
 Kac
 Kad
-Guz
 tur
 tul
 tfd
@@ -9317,6 +9319,7 @@ udaYc
 UzaRa
 ekatA
 kANkz
+kARva
 kulPa
 kOnda
 kzava
@@ -9487,7 +9490,6 @@ Peru
 barh
 Band
 Barv
-BIti
 BUpa
 Beri
 BEma
@@ -9660,6 +9662,7 @@ pracyavana
 prajvalita
 pratigrAha
 praticCAyA
+pratibimba
 pratilamBa
 prativastu
 pratIkzaRa
@@ -10750,6 +10753,7 @@ stiG
 sriD
 himA
 ayA
+ABu
 Ava
 iNg
 inv
@@ -12244,7 +12248,6 @@ amI
 asO
 AtA
 Api
-ABu
 izi
 enA
 ema
@@ -15117,6 +15120,7 @@ svAmitA
 havIman
 huMkAra
 hfdgata
+hEqimba
 hEraRya
 hrezuka
 akriyA
@@ -15389,6 +15393,7 @@ kaRwa
 kAMSi
 kIsta
 kumba
+krakz
 kloSa
 kvala
 kzEta
@@ -15462,6 +15467,7 @@ maDus
 mandu
 mahan
 mahin
+mAkis
 mAkIm
 mindA
 muNga
@@ -17121,7 +17127,6 @@ svardfS
 svAhuta
 havirad
 hiraRin
-hEqimba
 hotavya
 agfhya
 adadat
@@ -17439,7 +17444,6 @@ OkzRa
 kUlya
 kOzWa
 knaTa
-krakz
 kzAti
 gfYja
 goSva
@@ -17745,6 +17749,7 @@ piRqaKarjUra
 piRqopanizad
 puzkarAraRya
 pUrvasamudra
+pratibimbita
 pratyavarUQi
 pratyavaroha
 praTamakalpa
@@ -19132,6 +19137,7 @@ mitAhAra
 muKagata
 muKaBeda
 mudrANka
+mfLayAku
 meGadUta
 merukUwa
 modanIya
@@ -21283,6 +21289,7 @@ svalaMkfta
 svastikAra
 svastimant
 havanaSrut
+havirAhuti
 hastagraha
 hastagrAha
 hitakAraka
@@ -21515,6 +21522,7 @@ pARibanDa
 pARquroga
 pAdanyAsa
 pAdarajas
+pAzaRqatA
 pitfkArya
 puMsuvana
 putradAra
@@ -22252,7 +22260,6 @@ munivana
 muradviz
 mUjavant
 mUrDatas
-mfLayAku
 mfgavana
 mfgaSAva
 mfgADipa
@@ -22567,6 +22574,7 @@ gamaDyE
 garBatA
 gUQArTa
 goyukta
+Garmita
 carmaja
 janarAj
 jayASis
@@ -23256,6 +23264,7 @@ har
 ar
 AN
 ed
+kacawatapagajaqadaba
 bfhadAraRyakopanizad
 dvAtriMSallakzaRika
 pratijYAparipAlana
@@ -24093,7 +24102,6 @@ sTUlamaDya
 svatantray
 svayaMmfta
 svargamana
-havirAhuti
 hindusTAna
 hetuSAstra
 akzaRvant
@@ -24608,6 +24616,7 @@ jAlamAlA
 jIvavaDa
 jUtimant
 jYaptika
+JaMkArin
 tatkArin
 taTABAva
 tadvayas
@@ -24937,7 +24946,6 @@ kftvAya
 krozwar
 kzumant
 guruDur
-Garmita
 cItkfta
 culukay
 Cidraya
@@ -25376,7 +25384,6 @@ sar
 Ac
 di
 jYAnecCAkriyASaktimant
-kacawatapagajaqadaba
 cOrIsuratapaYcASikA
 pratyayaprativacana
 tEttirIyayajurveda
@@ -26339,6 +26346,7 @@ bodDar
 Bartar
 BUtatA
 Boktar
+BrAtar
 mantar
 miSray
 moktar
@@ -26599,7 +26607,6 @@ navameGakAla
 paYcapawwika
 paYcAByaDika
 prakzIRapApa
-pratibiMbita
 praTamaBakti
 praTitayaSas
 badDapallava
@@ -27487,7 +27494,6 @@ pUrvadakta
 pUrvavfkta
 pftanAzaha
 prajABAgin
-pratibiMba
 pratizWata
 pratizWana
 pratyAdoSa
@@ -27562,7 +27568,6 @@ samarvarRa
 sarparupin
 sarvikayin
 savilakzya
-suMbrahman
 suraBigaDi
 suryavaMSa
 soMmarAjan
@@ -27758,7 +27763,6 @@ paScaSAKa
 pAdalagra
 pAnamakta
 pApakarin
-pAzaMqatA
 pitfvikta
 pitfhvaya
 puravasin
@@ -27963,7 +27967,6 @@ jAspanya
 jiGAsati
 juhvasya
 jYipsati
-JaMkAtin
 taktulya
 taktvika
 tadvaktA
@@ -28318,7 +28321,6 @@ BikzAnt
 BurvaRa
 BEjaMga
 BEjizya
-BrAMtar
 maYcara
 malinya
 mAciras
@@ -28525,7 +28527,6 @@ maMstu
 maktas
 mapanA
 malava
-mAMkis
 mAdBis
 mAmakA
 mArali
@@ -28614,7 +28615,6 @@ uPita
 ekOka
 kanac
 kalap
-kARVa
 kfcCa
 koGna
 kOrya
@@ -28690,7 +28690,6 @@ vipin
 vihUt
 voqar
 vOqra
-SanEm
 Sayya
 SAlBa
 SAsra

@@ -135,6 +135,7 @@ akUpAra
 anyatra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -277,7 +278,6 @@ nandana
 nirukta
 prakASa
 pravara
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -3186,6 +3186,7 @@ vyADa
 vyAna
 Sakta
 Satru
+SanEs
 SamyA
 Sarva
 SaSin
@@ -3877,6 +3878,7 @@ grEzma
 cawaka
 cawula
 cIvara
+cUcuka
 Cidura
 jawAla
 janitf
@@ -4274,7 +4276,6 @@ vyUQa
 vraSc
 vrIhi
 Sakya
-SanEs
 Salka
 Sazpa
 SAkya
@@ -5093,7 +5094,6 @@ carman
 cAtaka
 cAndra
 cApala
-cUcuka
 cOrikA
 Cedana
 jaGana
@@ -5602,7 +5602,9 @@ KAd
 gad
 gAh
 gur
+Guz
 cam
+cud
 cup
 Cur
 jan
@@ -6702,7 +6704,6 @@ Kel
 gal
 Gna
 cak
-cud
 cur
 jap
 jam
@@ -6800,6 +6801,7 @@ anvavekzA
 apaBraMSa
 aparivfta
 abrAhmaRa
+aBikANkzA
 aByarcana
 aByutTAna
 avatamasa
@@ -7524,6 +7526,7 @@ sTOlya
 snAyin
 spfzwa
 smArta
+srazwf
 srasta
 svAnta
 hanana
@@ -7668,6 +7671,7 @@ prAS
 prez
 bisa
 BARa
+BIti
 maGA
 majj
 maRq
@@ -7830,7 +7834,6 @@ aparyanta
 apavArita
 aprasidDa
 aprAmARya
-aBikANkzA
 aBizvaNga
 avakIrRin
 avatAraRa
@@ -8543,7 +8546,6 @@ sopAka
 stEnya
 spanda
 spfSya
-srazwf
 hErika
 hlAdin
 afRin
@@ -8685,7 +8687,6 @@ pArI
 peSa
 peSI
 peza
-BIti
 BEma
 mazi
 mAma
@@ -8819,6 +8820,7 @@ parisaMKyA
 parisADana
 prakzAlaka
 pracyavana
+pratibimba
 pratilamBa
 prativastu
 pratIkzaRa
@@ -9754,7 +9756,6 @@ puraskriyA
 pratidinam
 pratiDvani
 pratipriya
-pratibimba
 pratimalla
 pratyAgama
 pratyAyana
@@ -9769,6 +9770,7 @@ prAtilomya
 prAstAvika
 rakzitavya
 vicAraRIya
+visPuliNga
 vESvAmitra
 vyatizakta
 vyatizaNga
@@ -10796,7 +10798,6 @@ mADyaMdina
 vinirvftta
 viprakIrRa
 vipraduzwa
-visPuliNga
 vyAvartaka
 vyAvartana
 saMvarDana
@@ -12456,6 +12457,7 @@ svaDIta
 svApana
 hammIra
 hastika
+hEqimba
 hEraRya
 hrezuka
 akuRWa
@@ -13579,7 +13581,6 @@ sparDya
 sPowita
 svAcAra
 hiMsita
-hEqimba
 hotavya
 atiSrI
 adadat
@@ -18176,6 +18177,7 @@ supradohA
 supraveSa
 suprahAra
 suprAkfta
+sumuRqIka
 sumuhUrta
 suvidIrRa
 suvivikta
@@ -20274,7 +20276,6 @@ suBAsvara
 sumardita
 sumarmaga
 sumarzaRa
-sumuRqIka
 suvartita
 suviklava
 suvinazwa
@@ -22863,7 +22864,6 @@ Ije
 gAm
 gAs
 gIr
-Gus
 cin
 JaN
 taj

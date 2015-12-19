@@ -795,6 +795,7 @@ apasalavi
 apasmArin
 aprakfzwa
 abrAhmaRa
+aBikANkzA
 aByarcana
 agnIzoma
 agraBAga
@@ -1024,7 +1025,6 @@ apavArita
 apracetas
 aprasidDa
 aprAmARya
-aBikANkzA
 aBivyakta
 aBizvaNga
 aByaYjana

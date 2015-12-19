@@ -114,6 +114,7 @@ pArAvata
 akUpAra
 anyatra
 ikzvAku
+brahman
 SramaRa
 antara
 arizwa
@@ -218,7 +219,6 @@ aSvatTa
 kaSyapa
 dunduBi
 prakASa
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -2266,7 +2266,9 @@ Kan
 KAd
 gAh
 gur
+Guz
 cam
+cud
 cup
 jan
 jas
@@ -2549,7 +2551,6 @@ Gna
 cat
 can
 cAy
-cud
 jur
 juz
 jeh
@@ -3019,6 +3020,7 @@ Agati
 AGfRi
 Antra
 ukTya
+kARva
 kulPa
 gantf
 Gfzvi
@@ -3315,7 +3317,6 @@ imaTA
 udvat
 Urjas
 ogaRa
-kARva
 krIqi
 krumu
 gantu
@@ -3421,6 +3422,7 @@ svAd
 himA
 agu
 ayA
+ABu
 iNg
 inv
 ima
@@ -3834,7 +3836,6 @@ asU
 AtA
 ADI
 Api
-ABu
 izi
 INK
 uKA
@@ -4839,6 +4840,7 @@ fBvan
 opaSa
 kIsta
 kftyA
+krakz
 kloSa
 kzEta
 gavyA
@@ -4884,6 +4886,7 @@ Barva
 mandu
 mahan
 mahin
+mAkis
 mAkIm
 muhur
 medin
@@ -5782,7 +5785,6 @@ buDya
 Bojas
 maTra
 mamat
-mAkis
 miSla
 yajya
 yayin
@@ -9972,7 +9974,6 @@ pAtu
 smad
 hoti
 arS
-Gus
 mUr
 yah
 sud
@@ -10153,7 +10154,6 @@ uKaCid
 ulbana
 kakAtA
 kfRvat
-krakz2
 krARan
 Candia
 jAnuza

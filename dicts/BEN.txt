@@ -127,6 +127,7 @@ pArAvata
 anyatra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -264,7 +265,6 @@ dunduBi
 nandana
 prakASa
 pravara
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -2998,6 +2998,7 @@ vyAja
 vyADa
 vyAna
 Satru
+SanEs
 SamyA
 Sarva
 Sasya
@@ -3618,6 +3619,7 @@ grEzma
 cawaka
 cawula
 cIvara
+cUcuka
 Cardis
 Cidura
 jawAla
@@ -3954,7 +3956,6 @@ vyasu
 vraSc
 vrIqa
 vrIhi
-SanEs
 Salka
 Sazpa
 SAkya
@@ -4721,7 +4722,6 @@ carman
 cazAla
 cAtaka
 cApala
-cUcuka
 cOrikA
 Cagala
 Cedana
@@ -5206,7 +5206,9 @@ KAd
 gad
 gAh
 gur
+Guz
 cam
+cud
 cup
 Cuw
 Cur
@@ -6290,7 +6292,6 @@ cak
 cat
 cAy
 cuw
-cud
 cur
 cUz
 jap
@@ -6411,6 +6412,7 @@ antarBAva
 anvavekzA
 apaBraMSa
 apasmArin
+aBikANkzA
 aByarcana
 aByutTAna
 avatamasa
@@ -7088,6 +7090,7 @@ sTAnin
 sTOlya
 snAyin
 smArta
+srazwf
 svasTa
 svAnta
 svErin
@@ -7257,6 +7260,7 @@ prAS
 pruz
 prez
 baMh
+BIti
 Bfmi
 Byas
 BraS
@@ -7325,7 +7329,6 @@ kUl
 kfz
 Kac
 Kad
-Guz
 Jyu
 taw
 tur
@@ -7471,7 +7474,6 @@ aDirohaRa
 anukzaRam
 anulepana
 apanodana
-aBikANkzA
 aBizvaNga
 aByaYjana
 avakIrRin
@@ -8201,7 +8203,6 @@ sopAka
 sOvida
 sTUrin
 spanda
-srazwf
 svArAj
 hasana
 hutASa
@@ -8350,7 +8351,6 @@ barh
 Band
 Barv
 BiyA
-BIti
 BIlu
 BUpa
 Beri
@@ -8528,6 +8528,7 @@ pracyavana
 pratigrAha
 praticCAyA
 pratijihvA
+pratibimba
 pratilamBa
 pravalAkin
 praSaMsana
@@ -9595,7 +9596,6 @@ puraskriyA
 pratarkaRa
 pratidinam
 pratiDvani
-pratibimba
 pratiroDin
 pratisarga
 pratyavara
@@ -9609,6 +9609,7 @@ prAhRetana
 vaktavyatA
 viparItatA
 visaMvAdin
+visPuliNga
 vyatizaNga
 SradDAmaya
 SlezmAtaka
@@ -10887,7 +10888,6 @@ vacanakara
 viSvakadru
 visaMzWula
 vistIrRatA
-visPuliNga
 vyAvartana
 SAkaSAkawa
 Sreyaskara
@@ -13872,6 +13872,7 @@ parisAntvana
 praticikIrzu
 pratidivasam
 pratipAdapam
+pratibimbita
 pratyupamAna
 brahmavittva
 mAsAnumAsika
@@ -14685,7 +14686,6 @@ paryavasTAtf
 pragrahavant
 pratitryaham
 pratidvirada
-pratibimbita
 pratyavaBAsa
 prayatnavant
 prasaNgavant

@@ -93,6 +93,7 @@ upanizad
 anyatra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -188,7 +189,6 @@ nandana
 nirukta
 prakASa
 pravara
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -2151,6 +2151,7 @@ Karpara
 goSIrza
 GaRwikA
 cEtyaka
+jampatI
 jamBIra
 diNnAga
 nibadDa
@@ -2640,7 +2641,6 @@ klamaTa
 Kaqgika
 cakrikA
 citrika
-jampatI
 jayantI
 tatkara
 tArAkza

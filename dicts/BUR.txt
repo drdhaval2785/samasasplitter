@@ -2907,6 +2907,7 @@ vyADa
 vyAna
 Sakta
 Satru
+SanEs
 SamyA
 Sarva
 SaSin
@@ -3480,6 +3481,7 @@ grAmin
 grEzma
 cawaka
 cIvara
+cUcuka
 Cardis
 Cidura
 jawAla
@@ -3812,7 +3814,6 @@ vraSc
 vrIqa
 vrIhi
 Sakya
-SanEs
 Samba
 Salka
 Sazpa
@@ -4479,7 +4480,6 @@ cazAla
 cAtaka
 cAndra
 cApala
-cUcuka
 Cagala
 jaGana
 janatA
@@ -4966,7 +4966,9 @@ KAd
 gad
 gAh
 gur
+Guz
 cam
+cud
 cup
 Cuw
 Cur
@@ -5818,7 +5820,6 @@ cat
 can
 cAy
 cuw
-cud
 cur
 cUz
 jap
@@ -6636,7 +6637,6 @@ kUl
 kfz
 Kac
 Kad
-Guz
 Jyu
 taw
 tur
@@ -7598,6 +7598,7 @@ parizkanda
 parovarIRa
 pArimuKika
 pratijihvA
+pratibimba
 mastuluNga
 vAkpAruzya
 vipraSnikA
@@ -7891,6 +7892,7 @@ cukkAra
 cuYcurI
 cyavAna
 Cidvara
+jampatI
 jYAteya
 JallarI
 tatpara
@@ -8685,13 +8687,13 @@ pratikfzwa
 pratikzaya
 pratijaNGA
 pratidinam
-pratibimba
 pratisarga
 pratyAlIQa
 praviKyAti
 praviSleza
 praSravaRa
 prAgrahara
+visPuliNga
 samutkroSa
 supratizWA
 sEtavAhinI
@@ -9942,7 +9944,6 @@ projjAsana
 balisadman
 vinirvftta
 viSalyakft
-visPuliNga
 vfzavAhana
 vyaqambaka
 Sarastamba
@@ -10425,7 +10426,6 @@ jakzaRa
 jaNgAla
 jaNgula
 janAnta
-jampatI
 jaranta
 jANgula
 juzkaka

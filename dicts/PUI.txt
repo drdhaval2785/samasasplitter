@@ -125,6 +125,7 @@ ANgirasa
 pArAvata
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -242,7 +243,6 @@ citraka
 dunduBi
 nandana
 nirukta
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -2543,6 +2543,7 @@ ISitA
 udIcI
 ulUta
 elaka
+kARva
 kOntI
 kzamA
 carya
@@ -2759,7 +2760,6 @@ Apana
 ulUpI
 Urjas
 ekata
-kARva
 kAtya
 kramu
 goGna
@@ -3082,6 +3082,7 @@ svargaloka
 agnikuRqa
 agnimitra
 antargiri
+arkaparRa
 AyuDAgAra
 AryAvarta
 AsurAyaRa
@@ -3356,7 +3357,6 @@ sarvatraga
 hemacandra
 annapUrRA
 arimejaya
-arkaparRa
 alpameDas
 AptoryAma
 upadAnavI
@@ -3517,6 +3517,7 @@ gOrika
 Gftoda
 jaleyu
 jaleSa
+jyezWA
 tElaka
 dfQAyu
 dyumat
@@ -3821,7 +3822,6 @@ gulika
 gOrISa
 Gfteyu
 capalA
-jyezWA
 tamasA
 tArakA
 devaja

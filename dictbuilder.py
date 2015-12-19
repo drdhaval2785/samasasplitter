@@ -98,11 +98,43 @@ def gerarddata():
 		fout.write(mem+"\n")
 	print "Completed adding data to gerard.txt"
 	fout.close()
+def mwstrip(word):
+	reps = ["/","'","^",">"]
+	for rep in reps:
+		word = word.replace(rep,'')
+	word = word.replace(' ','-')
+	word = re.sub('-{1,}','-',word)
+	return word
+def mwcomponentdata():
+	# Parsing the XMLs. We will use them as globals when need be.
+	print "Preparing data of MW from mw.xml"
+	mw = etree.parse('../Cologne_localcopy/mw/mwxml/xml/mw.xml') # parses the XML file.
+	print 'Parsing over.'
+	out = [member.text for member in mw.xpath('/mw/*/h/key2')]
+	fout = codecs.open('dicts/mwb.txt','w','utf-8')
+	print len(out)
+	output = set(out)
+	output.remove(None)
+	output = list(output)
+	print len(output)
+	samasamembers = []
+	for i in xrange(len(output)):
+		member = mwstrip(output[i])
+		parts = member.split('-')
+		for mem in parts:
+			if len(mem) > 1:
+				samasamembers.append(mem)
+	samasamembers = list(set(samasamembers))
+	print len(samasamembers)
+	for mem in samasamembers:
+		fout.write(mem+"\n")
+	print "Completed adding data to mwb.txt"
+	fout.close()
 
 if __name__=="__main__":
-	"""
 	sanhw2 = sanhw2()
 	sanhw2 = sorted(sanhw2, key=lambda x: (len(x[1]),len(x[0])), reverse=True)
 	colognedata()
-	"""
 	gerarddata()
+	mwcomponentdata()
+	

@@ -104,6 +104,7 @@ upanizad
 pArAvata
 anyatra
 praDAna
+brahman
 BArgava
 maRqala
 SramaRa
@@ -198,7 +199,6 @@ citraka
 dunduBi
 nandana
 nirukta
-brahman
 maRqUka
 maDyama
 Sambara
@@ -1724,6 +1724,7 @@ kohala
 krayya
 grAhya
 grEzma
+cUcuka
 jasuri
 tApana
 dAyaka
@@ -2156,7 +2157,6 @@ Kaqgin
 gulikA
 cazAla
 cAndra
-cUcuka
 jApaka
 jAlaka
 jYapti
@@ -2307,6 +2307,7 @@ kuc
 kuz
 gad
 gAh
+Guz
 Cuw
 Cur
 jan
@@ -3105,7 +3106,6 @@ ubj
 kuw
 kuT
 kfz
-Guz
 taw
 Dfz
 DyA
@@ -5919,6 +5919,7 @@ cetaka
 cetoBU
 coraka
 jananI
+jyezWA
 temana
 tripad
 dApana
@@ -5979,6 +5980,7 @@ Avfti
 udman
 kaRwa
 kulin
+krakz
 garda
 jAlin
 palya
@@ -6569,7 +6571,6 @@ gonAsa
 goPaRA
 gODera
 capalA
-jyezWA
 tvatka
 daMSin
 durADi
@@ -6615,7 +6616,6 @@ eRaka
 kAMsa
 kArza
 kUrmi
-krakz
 grahi
 jyeya
 jyoti
@@ -21089,7 +21089,7 @@ cEtyaSalAkA
 cOracCattra
 CandadAyaka
 jagajjananI
-jagaJaMpaRa
+jagaJampaRa
 jaNGAcArika
 janakaBakza
 janakaBuvan
@@ -23830,7 +23830,7 @@ ujjaNgikA
 ujjayantI
 utkaRWatA
 utkampikA
-utkaMpitA
+utkampitA
 utkarRatA
 utkarRika
 utkarRikA
@@ -24275,7 +24275,7 @@ taralAkzI
 tarAtyaya
 talicCaka
 tAjaBaNga
-tAwaMkati
+tAwaNkati
 tARqavana
 tAdAtmika
 tAdAtvika

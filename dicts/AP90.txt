@@ -102,6 +102,7 @@ upanizad
 akUpAra
 anyatra
 praDAna
+brahman
 rAkzasa
 SramaRa
 arizwa
@@ -180,7 +181,6 @@ citraka
 nirukta
 prakASa
 pravara
-brahman
 maDyama
 sTavira
 atyaya
@@ -2007,6 +2007,7 @@ viyat
 vedya
 vyaTA
 Sakta
+SanEs
 SamyA
 Sarva
 SaSin
@@ -2726,7 +2727,6 @@ vyasu
 vyUQa
 vraSc
 Sakya
-SanEs
 SAyin
 SAlin
 SIrRa
@@ -3608,7 +3608,9 @@ KAd
 gad
 gAh
 gur
+Guz
 cam
+cud
 cup
 Cuw
 Cur
@@ -5002,6 +5004,7 @@ sTAnin
 spfzwa
 smArta
 sravat
+srazwf
 srasta
 svErin
 hAlinI
@@ -5214,7 +5217,6 @@ kUl
 kfz
 Kac
 Kad
-Guz
 Jyu
 taw
 tur
@@ -5945,7 +5947,6 @@ sOvara
 sTUrin
 spfSya
 syanna
-srazwf
 svArAj
 hasita
 hAPikA
@@ -7411,6 +7412,7 @@ awa
 aqq
 ayA
 arG
+ABu
 ArU
 inv
 IqA
@@ -8878,7 +8880,6 @@ aww
 aBI
 asU
 ADI
-ABu
 izi
 enA
 ema
@@ -9570,6 +9571,7 @@ uzRiman
 uzRIzin
 fBukzin
 evAvada
+Oqupika
 OpAyika
 kapawin
 kravaRa
@@ -10911,7 +10913,6 @@ ullApin
 Urjavya
 EzAvIra
 ojasIna
-Oqupika
 OpADika
 kaMsIya
 katpaya
@@ -12770,6 +12771,7 @@ upakanizWikA
 upasamAhArya
 upASaMsanIya
 Ekasahasrika
+cAturTAhnika
 parirakzitin
 pratinirjita
 prativiSizwa
@@ -13873,7 +13875,6 @@ aSitaMgavIna
 AgrahAyaRaka
 ASitaMgavIna
 udakeviSIrRa
-cAturTAhnika
 nizkramaRikA
 parisaMKyAta
 paryavasTAtf
@@ -14120,6 +14121,7 @@ aBisartf
 aByatIta
 aByavahf
 aByutpat
+araMGuza
 araRyIya
 aryamika
 avaBedin
@@ -15572,7 +15574,6 @@ aBihvara
 aByucita
 ayajYaka
 ayogavaH
-araMGuza
 arRasvat
 avajuzwa
 avatapta
@@ -18350,7 +18351,6 @@ jagaraH
 jawAyuH
 jaqulaH
 jananiH
-jaMpatI
 jAtimat
 jAbAlaH
 jAbAliH
@@ -20770,7 +20770,6 @@ pratiniyamaH
 pratipAdanaM
 pratipAlanaM
 pratipraSnaH
-pratibiMbita
 prativacanaM
 prativiGAtaH
 pratiSAsanaM
@@ -21975,7 +21974,6 @@ giriyakaH
 grAmayati
 GawiGawaH
 canasyati
-caMdanIyA
 cAmarikaH
 cAmIkaraM
 cekitAnaH
@@ -25367,6 +25365,7 @@ aluk
 AKaH
 AgUH
 ARiH
+ApiH
 Amiz
 ASiH
 ASco
@@ -25751,6 +25750,7 @@ pratipUjanaM
 pratipUraRaM
 pratibaMDaka
 pratibADanaM
+pratibiMbita
 pratiBAsanaM
 pratiBedanaM
 pratimocanaM
@@ -27550,6 +27550,7 @@ grAmAwikA
 grIvalikA
 caMqAlikA
 caMqimana
+caMdanIyA
 caMdrakaH
 caMdrakin
 caMdramas
@@ -28904,7 +28905,7 @@ mADyamya
 mAMdAraH
 mAruMqaH
 mArdavaM
-mAhadreM
+mAheMdra
 mitagama
 miliMdaH
 mukuMdaH
@@ -29622,6 +29623,7 @@ jaMGila
 jaMjana
 jaWalaM
 jaMtukA
+jaMpatI
 jaMBaka
 jaMBakA
 jaraMqa
@@ -30979,7 +30981,6 @@ AMqa
 AMqI
 ADya
 AMta
-ApeH
 iMga
 iMDa
 uMCU
@@ -31141,7 +31142,6 @@ IMt
 uMd
 ull
 fMj
-cuQ
 mIg
 vez
 Sro

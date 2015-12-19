@@ -135,6 +135,7 @@ akUpAra
 anyatra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -277,7 +278,6 @@ nandana
 nirukta
 prakASa
 pravara
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -3276,6 +3276,7 @@ vyADa
 vyAna
 Sakta
 Satru
+SanEs
 SamyA
 SaSin
 Sasya
@@ -4048,6 +4049,7 @@ grEzma
 cawaka
 cawula
 cIvara
+cUcuka
 Cardis
 Cidura
 jawAla
@@ -4482,7 +4484,6 @@ vyUQa
 vrIqa
 vrIhi
 Sakya
-SanEs
 Samba
 Salka
 Sazpa
@@ -5458,7 +5459,6 @@ cazAla
 cAtaka
 cAndra
 cApala
-cUcuka
 cOrikA
 Cagala
 Cedana
@@ -6047,6 +6047,7 @@ KAd
 gad
 gur
 cam
+cud
 cup
 Cuw
 Cur
@@ -7492,7 +7493,6 @@ cak
 can
 cAy
 cuw
-cud
 cur
 cUz
 jap
@@ -8716,6 +8716,7 @@ sTOlya
 snAyin
 spfzwa
 sravat
+srazwf
 srasta
 svasTa
 svAnta
@@ -8948,6 +8949,7 @@ nfga
 pAwa
 pAdU
 BARa
+BIti
 Bfmi
 Byas
 BraS
@@ -10551,7 +10553,6 @@ sTUrin
 spfkkA
 spfSya
 syanna
-srazwf
 svArAj
 svArTa
 hasana
@@ -10803,7 +10804,6 @@ Peru
 barh
 Barv
 BiyA
-BIti
 BIlu
 BUpa
 Beri
@@ -11970,6 +11970,7 @@ cuYcurI
 cezwana
 Cardana
 Cidvara
+jampatI
 jamBIra
 jalOkas
 jalpana
@@ -16430,6 +16431,7 @@ aBimAnita
 aBilAzuka
 aByarTita
 aByAGAtin
+arkaparRa
 arTasidDa
 arTAntara
 avakalita
@@ -17739,6 +17741,7 @@ ekayoni
 ekIBAva
 etAdfSa
 elavila
+Oqupika
 OdBijja
 kakanda
 kaNkeru
@@ -17881,7 +17884,6 @@ jaNgula
 janAnta
 jantulA
 janmada
-jampatI
 jambUla
 jaraRqa
 jaranta
@@ -20377,7 +20379,6 @@ amftarasa
 amftAnDas
 arikTaBAj
 aruRopala
-arkaparRa
 arkabanDu
 arTApatti
 alpameDas
@@ -22238,7 +22239,6 @@ ekaSAKa
 eqagaja
 okodanI
 ozaDISa
-Oqupika
 kaMsaka
 kaMsIya
 kaNgunI
@@ -35977,6 +35977,7 @@ durgasaYcara
 durgASrayaRa
 dUravastraka
 dUrasaMsTAna
+devavardDaki
 devAnAmpriya
 dozaprasaNga
 dyUtADikArin
@@ -37116,6 +37117,7 @@ kftopaBoga
 kfzRaSimbI
 kfzRASrita
 keSagfhIta
+keSapaNkti
 kEtavavAda
 komalagIta
 kozaSAyikA
@@ -37224,6 +37226,7 @@ tamaHsTita
 tamaskalpa
 taruRIgaRa
 taruRIjana
+tarupaNkti
 taruviwapa
 tArADipati
 tiktapatra
@@ -40312,7 +40315,6 @@ daSanocCizWa
 dArasaNgraha
 dIrGapatraka
 devaKAtavila
-devavardDaki
 dvandvacArin
 dvandvaduHKa
 dvandvaBinna
@@ -41035,7 +41037,6 @@ kftakOtuka
 kfzRaSrita
 kfzRArccis
 ketuvasana
-keSapaNkti
 kEvarttaka
 kozanAyaka
 kozADyakza
@@ -42817,7 +42818,6 @@ cAturmmAsa
 jaladantin
 jAtakOtuka
 jAtavepaTu
-tarupaNkti
 tizyapuzpa
 duHKaCinna
 duHKaCedya
@@ -42879,7 +42879,6 @@ vizamaCada
 vizamaCAyA
 vizuvaCAyA
 visambAdin
-visPuliMga
 vfzalapati
 vfhatipati
 vfhaddyuti
@@ -44091,6 +44090,7 @@ vizamamati
 vizayArtta
 vizAdakAla
 visakalita
+visPuliMga
 vfjinAvaha
 SaktyaDISa
 SarapuNkzA

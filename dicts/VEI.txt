@@ -81,6 +81,7 @@ ANgirasa
 upanizad
 pArAvata
 ikzvAku
+brahman
 BArgava
 SramaRa
 Atreya
@@ -151,7 +152,6 @@ kaSyapa
 dunduBi
 nirukta
 pravara
-brahman
 maRqUka
 vasizWa
 Sambara
@@ -1451,6 +1451,7 @@ sujAta
 avasa
 avAta
 Ayuta
+kARva
 citrA
 tfzwa
 darvi
@@ -1553,7 +1554,6 @@ avata
 AhAva
 udAja
 ogaRa
-kARva
 krumu
 gATin
 tarda
@@ -1982,6 +1982,7 @@ kzumpa
 gANgya
 gomatI
 grEvya
+jyezWA
 DizaRA
 DEvara
 Dvasra
@@ -2222,7 +2223,6 @@ cumuri
 jaritf
 jAnaki
 jAlAza
-jyezWA
 tArakA
 tArpya
 tugrya

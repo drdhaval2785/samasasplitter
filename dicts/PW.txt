@@ -135,6 +135,7 @@ akUpAra
 anyatra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -277,7 +278,6 @@ nandana
 nirukta
 prakASa
 pravara
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -3317,6 +3317,7 @@ vyADa
 vyAna
 Sakta
 Satru
+SanEs
 Sarva
 SaSin
 Sasya
@@ -4095,6 +4096,7 @@ grEzma
 cawaka
 cawula
 cIvara
+cUcuka
 Cardis
 Cidura
 jawAla
@@ -4537,7 +4539,6 @@ vraSc
 vrIqa
 vrIhi
 Sakya
-SanEs
 Samba
 Salka
 Sazpa
@@ -5543,7 +5544,6 @@ cazAla
 cAtaka
 cAndra
 cApala
-cUcuka
 cOrikA
 Cagala
 Cedana
@@ -6178,7 +6178,9 @@ KAd
 gad
 gAh
 gur
+Guz
 cam
+cud
 cup
 Cuw
 Cur
@@ -7755,7 +7757,6 @@ cat
 can
 cAy
 cuw
-cud
 cur
 cUz
 jap
@@ -7929,6 +7930,7 @@ apasalavi
 apasmArin
 aprakfzwa
 abrAhmaRa
+aBikANkzA
 aByarcana
 aByutTAna
 avatamasa
@@ -9421,6 +9423,7 @@ baMh
 bisa
 Bala
 BARa
+BIti
 Bfmi
 Byas
 BraS
@@ -9503,7 +9506,6 @@ kUj
 kUl
 Kac
 Kad
-Guz
 Jyu
 taw
 tur
@@ -9748,7 +9750,6 @@ aparyanta
 apracetas
 aprasidDa
 aprAmARya
-aBikANkzA
 aBizvaNga
 aByaYjana
 avakIrRin
@@ -11302,6 +11303,7 @@ kaPin
 kaSya
 kAkza
 kANkz
+kARva
 kulPa
 kxpta
 kOntI
@@ -11562,7 +11564,6 @@ barh
 Band
 Barv
 BiyA
-BIti
 BIlu
 BUpa
 Beri
@@ -11900,6 +11901,7 @@ prajvalita
 pratigrAha
 praticCAyA
 pratijihvA
+pratibimba
 prativastu
 pratiSruta
 pratIkzaRa
@@ -12917,6 +12919,7 @@ cEtyaka
 cyavAna
 Cardana
 Cidvara
+jampatI
 jamBIra
 jalOkas
 jalpana
@@ -13768,7 +13771,6 @@ kawin
 kantu
 karbu
 kahva
-kARva
 kAtya
 kAlpa
 kukza
@@ -14184,6 +14186,7 @@ ayA
 arG
 alu
 Aqi
+ABu
 ArU
 Ava
 iNg
@@ -14603,7 +14606,6 @@ pratijanya
 pratidinam
 pratiDvani
 pratipriya
-pratibimba
 pratimalla
 pratiroDin
 pratisarga
@@ -14648,6 +14650,7 @@ viSveSvara
 vizamAyuDa
 vizRugupta
 visaMvAdin
+visPuliNga
 vfzotsarga
 vESvAmitra
 vyatizaNga
@@ -17722,7 +17725,6 @@ asO
 AtA
 ADI
 Api
-ABu
 izi
 INK
 und
@@ -18539,7 +18541,6 @@ viSvakadru
 viSvaBojas
 visaMzWula
 vistIrRatA
-visPuliNga
 vfzavAhana
 vedapAraga
 vyaqambaka
@@ -18685,6 +18686,7 @@ aBivimAna
 aByarTita
 aByAGAtin
 arocamAna
+arkaparRa
 arTasidDa
 arTAntara
 avagAhana
@@ -23999,7 +24001,6 @@ amftAnDas
 arikTaBAj
 arimejaya
 aruRopala
-arkaparRa
 arkabanDu
 arTApatti
 alpameDas
@@ -27261,6 +27262,7 @@ hiraNgu
 huMkAra
 huRqikA
 hfdgata
+hEqimba
 hEraRya
 hrivera
 hrIjita
@@ -28158,6 +28160,7 @@ kulin
 kftvI
 kESya
 kolyA
+krakz
 kriya
 krunT
 klind
@@ -28304,6 +28307,7 @@ maryA
 masti
 mahan
 mahin
+mAkis
 mAkIm
 mAGya
 mANkz
@@ -31984,6 +31988,7 @@ caturaSri
 caturvaya
 catuzkoRa
 catUrAtra
+candanIyA
 candrAMSu
 campApurI
 caramAdri
@@ -35969,7 +35974,6 @@ hfdgola
 hfdyatA
 hflleKa
 hevAkin
-hEqimba
 hotavya
 akalkA
 akArin
@@ -36931,7 +36935,6 @@ kOSya
 kOzWa
 knaMs
 knasa
-krakz
 kzapa
 kzAti
 kzitA
@@ -37062,7 +37065,6 @@ maTra
 mamat
 mamma
 mahya
-mAkis
 mADva
 miSla
 mUrDa
@@ -37831,6 +37833,7 @@ catvAriMSati
 candakapuzpa
 caraRABaraRa
 carmamaRqala
+cAturTAhnika
 citrANgadasU
 CandaHSAstra
 janakatanayA
@@ -40367,7 +40370,6 @@ cakrAyuDa
 caRqabala
 caturanta
 catuzpAda
-candanIyA
 candraSrI
 candrArDa
 candrASva
@@ -42641,6 +42643,7 @@ muravAra
 mUQAtman
 mUlaDana
 mUzakAda
+mfLayAku
 mfgadyut
 mfgaDUma
 mfgapada
@@ -46418,7 +46421,6 @@ candravarman
 candrAvaloka
 campakaramBA
 cAkravarmaRa
-cAturTAhnika
 cAndrAyaRika
 citrakuRqala
 Candonuvftta
@@ -46438,6 +46440,7 @@ tfRajalAyukA
 tftIyadivasa
 tftIyAsamAsa
 tErovyaYjana
+trapukarkawI
 tridaSeSvara
 tridivodBavA
 triDArasnuhI
@@ -46706,6 +46709,7 @@ vizpuliNgaka
 vIrapramokza
 vfkzaniryAsa
 vfkzAyurveda
+vfttakarkawI
 vfttamallikA
 vfdDacARakya
 vfdDaSAkalya
@@ -47640,6 +47644,7 @@ ramBAtftIyA
 rasamaYjarI
 rAkASaSANka
 rAjakanyakA
+rAjakarkawI
 rAjacihnaka
 rAjapawwikA
 rAjamaRqUka
@@ -49507,6 +49512,7 @@ harivarman
 harivAsara
 hariSarman
 havanaSrut
+havirAhuti
 havirDAman
 haviryajYa
 hastagraha
@@ -50593,6 +50599,7 @@ pAraSavya
 pArAvarya
 pArizatka
 pArucCepi
+pAzaRqatA
 pikekzaRA
 piNgasAra
 picaRqaka
@@ -51988,6 +51995,7 @@ ayukCada
 ayutaSas
 ayutAjit
 ayopAzwi
+araMGuza
 araRyIya
 aratnika
 arAjanya
@@ -53220,7 +53228,6 @@ mUlapotI
 mUlADAra
 mUzikAda
 mUzikAra
-mfLayAku
 mfgaDara
 mfgarasA
 mfgavana
@@ -54359,6 +54366,7 @@ graBaRa
 grahaka
 glucuka
 GawwagA
+Garmita
 GulaYca
 GftasnA
 Gftasnu
@@ -57108,6 +57116,7 @@ sarvasattvapApajahana
 svAtmasaMvittyupadeSa
 aparADaBaYjanastotra
 uddAlakapuzpaBaYjikA
+kacawatapagajaqadaba
 kfzRakiMkaraprakriyA
 gIrvARendrasarasvatI
 golANgulaparivartana
@@ -57952,6 +57961,7 @@ mahAratnavarzA
 mahAsADanaBAga
 mahAsAhasikatA
 mahAsiMhatejas
+mAkzIkaSarkarA
 mAdrukasTalaka
 mADavendrapurI
 mADyaMdinAyana
@@ -58998,6 +59008,7 @@ avantivarman
 avaBAsapraBa
 avamUrDaSaya
 avayavaDarma
+avayAtaheLas
 avaraNgasAha
 avizayamanas
 avyavacCinna
@@ -59281,7 +59292,6 @@ turagadAnava
 turagalIlaka
 tuzArapatana
 tuhinakiraRa
-trapukarkawI
 triMSacClokI
 triMSadviMSa
 tripuraGAtin
@@ -59926,7 +59936,6 @@ vistIrRavatI
 vismayaMkara
 vihAraSayana
 vihArAvasaTa
-vfttakarkawI
 vfttataRqula
 vfttadarpaRa
 vfdDavasizWa
@@ -61784,7 +61793,6 @@ rAgaprasava
 rAgamaYjarI
 rAGavAnanda
 rANkavAyaRa
-rAjakarkawI
 rAjakzavaka
 rAjaKarjUrI
 rAjapalARqu
@@ -65483,7 +65491,6 @@ hariSayana
 haristotra
 harisvAmin
 harzakIrti
-havirAhuti
 havirmanTa
 havizpAtra
 hastakArya
@@ -65568,6 +65575,7 @@ aDicaraRa
 aDivapana
 aDivarcas
 aDivAsanA
+aDihastya
 aDogamana
 anaNgatva
 anatineda
@@ -67272,7 +67280,6 @@ pArzadIya
 pAliMhira
 pAllavika
 pASakaRWa
-pAzaRqatA
 pikapriyA
 picaRqika
 picCabARa
@@ -69069,6 +69076,7 @@ suprAkfta
 suBagatva
 sumadgaRa
 sumaDyama
+sumuRqIka
 sumuhUrta
 sumnAvarI
 surarAjan
@@ -69413,7 +69421,6 @@ ayaskfti
 aragvaDa
 araMkfti
 araMgama
-araMGuza
 arigUrta
 aridAnta
 arisiMha
@@ -70211,6 +70218,7 @@ jYaptika
 jYAnaSrI
 jyAhroqa
 jvarANgI
+JaMkArin
 JAwkArin
 wiriwirA
 qamaruka
@@ -72893,7 +72901,6 @@ grahatA
 grAhika
 GaRwAlI
 GaRwika
-Garmita
 GArteya
 GUtkAra
 Gftaduh
@@ -74283,6 +74290,7 @@ svaguRa
 svagopa
 svajAta
 svajita
+svaDIti
 svaDfti
 svapati
 svapada
@@ -78967,7 +78975,6 @@ mahendravarman
 maheSvaratIrTa
 maheSvaradatta
 maheSvaraBawwa
-mAkzIkaSarkarA
 mAtfBedatantra
 mADyaMdinaSAKA
 mArjAraganDikA
@@ -81035,7 +81042,6 @@ avacarantikA
 avantibrahma
 avantisvAmin
 avantyaSmaka
-avayAtaheLas
 avarohaSAKin
 avalokayitar
 avaSyaMBAvin
@@ -83832,6 +83838,7 @@ karmaRyaBuj
 karmapAradA
 karmavacana
 karmaSataka
+kalakaRWikA
 kalamottama
 kalaSodBava
 kalahaMsaka
@@ -91790,7 +91797,6 @@ aDibuBUzu
 aDiraTIya
 aDirAjatA
 aDivaktar
-aDihastya
 aDonayana
 aDonivIta
 aDyarDeqa
@@ -98007,7 +98013,6 @@ jYAnolkA
 jYeyajYa
 jyApiRqa
 jyezWinI
-JaMkArin
 qAmarava
 qAmBiwwa
 takraBid
@@ -101460,7 +101465,6 @@ janitar
 janmeSa
 janyIya
 jamAlin
-jaMpatI
 jampAna
 jayAyya
 jaritar
@@ -102126,6 +102130,7 @@ vAkkeli
 vAkkoka
 vAkyatA
 vAganta
+vAgguRa
 vAgbali
 vAgyoga
 vAgvawa
@@ -102899,7 +102904,6 @@ srotoja
 srOtika
 svagati
 svacara
-svaDIti
 svabIja
 svaratA
 svarjin
@@ -103640,6 +103644,7 @@ BedIya
 Boktar
 Bogaka
 BogadA
+BrAtar
 matsin
 maDupU
 manApa
@@ -104974,6 +104979,7 @@ sPA
 hIz
 hun
 Aw
+U~
 eN
 Ri
 pu
@@ -105599,6 +105605,7 @@ ekAnnanaktaBojana
 kambaleSvaragrAma
 kambukeSvaratIrTa
 kalkidvAdaSIvrata
+kavirAjavasuMDara
 kavIndrakalpataru
 kaSyapasUnujyezWa
 kAkakulAyaganDika
@@ -111890,7 +111897,6 @@ karmasAraTi
 karmasenIya
 karmADyakza
 karmAravana
-kalakaRWikA
 kalaNkaleKA
 kalamasTAna
 kalavikarRI
@@ -118851,6 +118857,7 @@ jAtiparRI
 jAtisasya
 jAnumAtra
 jAmbuvant
+jAyampatI
 jitamanas
 jinakalpa
 jinatrAta
@@ -124942,7 +124949,6 @@ vaSAtva
 vasitar
 vastrin
 vasnikA
-vAgguRa
 vAgjAla
 vAgvada
 vANgAla
@@ -125987,7 +125993,6 @@ Bettar
 BEqaka
 Bowago
 BramAy
-BrAtar
 maKeSa
 magaDy
 mataka
@@ -127073,7 +127078,6 @@ hek
 hoQ
 Az
 uq
-U~
 sv
 pratAparudrayaSoBUzaRAlaMkAraSAraSAstra
 sADAraRAsADaraRAnupasaMhAriviroDagranTa
@@ -127128,7 +127132,6 @@ SivanAmAzwottaraSataka
 svAyaMBUkzetramAhAtmya
 AtmapratyarTinAmavant
 Abrahmastambaparyanta
-kacawatapagajaqaMdaba
 karkacaRqeSvaratantra
 kallAleSolakzmIkAntaH
 keliSvetasahasrapattr
@@ -127301,7 +127304,6 @@ upabAhyakasfYjayI
 ekaviMSatyanugAna
 kaMsakeSinizUdana
 kandarpakumArABra
-kavirAjavasuMGara
 kuRqodyotadarSana
 kfcCramUtrapurIza
 kfzRakarburabarRa
@@ -128110,7 +128112,6 @@ sAkaMprasTApa
 sAmavedacCalA
 sArasvatOzaDI
 suratasaMBoga
-suSlizwamaMDi
 susaMpratapta
 susAntvyamAna
 sUtaniryAtaka
@@ -129596,7 +129597,6 @@ sunirvftta
 supayasvin
 subalavant
 sumahAdfQa
-sumuRqIMka
 suvitrasta
 suvivaktar
 suziravant
@@ -129961,7 +129961,6 @@ jayadAman
 jalapatra
 jalappikA
 jAtAyatyA
-jAyaMpatI
 jA~hAgIra
 jitakAlin
 juhvAMsya

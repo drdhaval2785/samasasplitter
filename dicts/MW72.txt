@@ -135,6 +135,7 @@ akUpAra
 anyatra
 ikzvAku
 praDAna
+brahman
 BArgava
 maRqala
 rAkzasa
@@ -277,7 +278,6 @@ nandana
 nirukta
 prakASa
 pravara
-brahman
 maRqUka
 maDyama
 vasizWa
@@ -3276,6 +3276,7 @@ vyADa
 vyAna
 Sakta
 Satru
+SanEs
 Sarva
 SaSin
 Sasya
@@ -4025,6 +4026,7 @@ grEzma
 cawaka
 cawula
 cIvara
+cUcuka
 Cardis
 Cidura
 jawAla
@@ -4468,7 +4470,6 @@ vraSc
 vrIqa
 vrIhi
 Sakya
-SanEs
 Salka
 Sazpa
 SAkya
@@ -5414,7 +5415,6 @@ cazAla
 cAtaka
 cAndra
 cApala
-cUcuka
 cOrikA
 Cagala
 Cedana
@@ -6044,7 +6044,9 @@ KAd
 gad
 gAh
 gur
+Guz
 cam
+cud
 cup
 Cuw
 Cur
@@ -7514,7 +7516,6 @@ cat
 can
 cAy
 cuw
-cud
 cur
 cUz
 jap
@@ -7663,6 +7664,7 @@ apasalavi
 apasmArin
 aprakfzwa
 abrAhmaRa
+aBikANkzA
 aByarcana
 aByutTAna
 avatamasa
@@ -8712,6 +8714,7 @@ snAyin
 spfzwa
 smArta
 sravat
+srazwf
 srasta
 svAnta
 svecCA
@@ -9012,6 +9015,7 @@ baMh
 bisa
 Bala
 BARa
+BIti
 Bfmi
 Byas
 BraS
@@ -9098,7 +9102,6 @@ kUl
 kfz
 Kac
 Kad
-Guz
 Jyu
 taw
 tur
@@ -9307,7 +9310,6 @@ apavArita
 apracetas
 aprasidDa
 aprAmARya
-aBikANkzA
 aBivyakta
 aBizvaNga
 aByaYjana
@@ -10543,7 +10545,6 @@ spanda
 spfkkA
 spfSya
 syanna
-srazwf
 svArAj
 svArTa
 hasana
@@ -10618,6 +10619,7 @@ kaPin
 kaSya
 kAkza
 kANkz
+kARva
 kulPa
 kxpta
 kOntI
@@ -10893,7 +10895,6 @@ Peru
 Band
 Barv
 BiyA
-BIti
 BIlu
 Beri
 BEma
@@ -11177,6 +11178,7 @@ prajvalita
 pratigrAha
 praticCAyA
 pratijihvA
+pratibimba
 pratilamBa
 prativastu
 pratiSruta
@@ -11950,6 +11952,7 @@ cEtyaka
 cyavAna
 Cardana
 Cidvara
+jampatI
 jamBIra
 jalpana
 jAgarin
@@ -12739,7 +12742,6 @@ kawin
 kantu
 karbu
 kahva
-kARva
 kAtya
 kAlpa
 kukza
@@ -13168,6 +13170,7 @@ ayA
 arG
 alu
 Aqi
+ABu
 ArU
 Ava
 iNg
@@ -13464,7 +13467,6 @@ pratidinam
 pratiDvani
 pratipriya
 pratibadDa
-pratibimba
 pratibudDa
 pratimalla
 pratiroDin
@@ -13493,6 +13495,7 @@ rakzitavya
 vAtaskanDa
 vicAraRIya
 visaMvAdin
+visPuliNga
 vESvAmitra
 vyatizakta
 vyatizaNga
@@ -16055,7 +16058,6 @@ aBI
 asU
 ADI
 Api
-ABu
 INK
 und
 fca
@@ -16483,7 +16485,6 @@ vipraduzwa
 viBajanIya
 viBAvanIya
 visaMzWula
-visPuliNga
 vyaqambaka
 vyatirekin
 vyAvartaka
@@ -17608,6 +17609,7 @@ fBukzin
 ekatAla
 elavila
 evAvada
+Oqupika
 OdBijja
 OpAyika
 kakanda
@@ -17740,7 +17742,6 @@ jakzaRa
 jaNgAla
 jaNgula
 jantulA
-jampatI
 jambUla
 jayizRu
 jaraRqa
@@ -21468,7 +21469,6 @@ EkAtmya
 EzAvIra
 okodanI
 ojasIna
-Oqupika
 OpADika
 kaMsaka
 kaMsIya
@@ -23092,6 +23092,7 @@ maryA
 masti
 mahan
 mahin
+mAkis
 mAkIm
 mAGya
 mANkz
@@ -24280,6 +24281,7 @@ gAYjikAya
 gAnDAreya
 guruRwaka
 grahayAlu
+candanIyA
 cAkrAyaRa
 cAturTika
 cAtuzwaya
@@ -26991,7 +26993,6 @@ maTra
 mamat
 mamma
 mahya
-mAkis
 mADva
 miSla
 mUrDa
@@ -27412,6 +27413,7 @@ Ekasahasrika
 Ottarapadika
 OpakurvARaka
 catvAriMSati
+cAturTAhnika
 jAjvalyamAna
 trAsadasyava
 dadfSAnapavi
@@ -28214,7 +28216,6 @@ gfYjanaka
 gErikzita
 grAmawikA
 grAmIyaka
-candanIyA
 calitavya
 cAkaciccA
 cAturakza
@@ -29138,6 +29139,7 @@ mihirARa
 mImAMsya
 mudgazwa
 muravAra
+mfLayAku
 melApaka
 mETunika
 modakikA
@@ -36852,6 +36854,7 @@ aBipariglAna
 aBimanyamAna
 aByAtmataram
 avamUrDaSaya
+avayAtaheLas
 avaraNgasAha
 asamBAvanIya
 Amuzyakulaka
@@ -44708,6 +44711,7 @@ muKulI
 muYcat
 muzRat
 mUlina
+mfLIka
 mfqitf
 mfdUBU
 mfzAya
@@ -47970,6 +47974,7 @@ vizwan
 vizwvI
 vizPur
 visPul
+vILita
 vIjala
 vIrikA
 vIviDa
@@ -48620,12 +48625,10 @@ savAzpastamBam
 sisaNgrAmayizu
 anavakASatvAt
 apapratipakza
-avayAtahel2as
 asaYjYisattva
 upasaNgrahaRa
 OpasaNkramaRa
 OpasaNKyAnika
-cAtur2TAhnika
 jAlanDarAyaRa
 jyotayamAnaka
 parijiGramARa
@@ -49554,7 +49557,6 @@ muzyamARa
 mfgayitvA
 mfgyamARa
 mfdyamana
-mfl2ayAku
 mokzamARa
 mocayitvA
 mlAyamAna
@@ -50005,7 +50007,6 @@ miRqalin
 mukAbilA
 mumukzat
 mfgamARa
-mfl2ayat
 mezAyita
 mokzayat
 mlilazwa
@@ -50115,7 +50116,6 @@ vyAvfjya
 vyucCana
 vyudUhya
 vyUrRvat
-vrIl2ana
 SatrUyat
 Sabdayat
 Samizyat
@@ -50441,7 +50441,7 @@ mahitvA
 militvA
 mumurat
 muzitvA
-mfl2Ika
+mfLayat
 mohayat
 mradaya
 yayivas
@@ -50530,8 +50530,6 @@ viskand
 viharat
 vihasat
 vihasya
-vIl2aya
-vIl2ita
 vfRvAna
 vepayat
 vEndavi
@@ -50541,6 +50539,7 @@ vyavahA
 vyADUya
 vyABaYj
 vyundat
+vrILana
 Satruya
 SamitvA
 SarvarA
@@ -50600,7 +50599,6 @@ saYjval
 saqBAva
 sadandi
 sanizya
-sanIl2a
 santakz
 santani
 santark
@@ -50680,7 +50678,6 @@ svaDitI
 svaSura
 hasitvA
 hiqamba
-hIl2ita
 akarRA
 akzaRA
 akzuRA
@@ -50760,7 +50757,6 @@ BaktvA
 Bavatu
 BittvA
 BuYjat
-BUz2nu
 BOveya
 maTIna
 maTnat
@@ -50809,6 +50805,7 @@ vizkaB
 vizwvA
 vizPul
 vizyat
+vILaya
 vIqaya
 vIvfta
 vfMhat
@@ -50892,6 +50889,7 @@ saYjit
 saYjIv
 sattvA
 saDamA
+sanILa
 santaq
 santan
 santap
@@ -50933,7 +50931,6 @@ samope
 samBur
 sahUtI
 sAKowa
-sAl2hf
 sidDvA
 silika
 sisaka
@@ -50956,7 +50953,6 @@ hiMsat
 hinvat
 huvAna
 hfzwvA
-hel2as
 helita
 hnutvA
 hvayat

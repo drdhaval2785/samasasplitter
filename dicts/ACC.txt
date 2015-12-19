@@ -856,6 +856,7 @@ sujana
 suBawa
 spanda
 ukTya
+kARva
 caRqI
 cUrRi
 meRWa
@@ -926,7 +927,6 @@ pASuka
 mowaka
 yAmala
 ekAha
-kARva
 kAtya
 Bawwi
 hOtra
@@ -15709,6 +15709,7 @@ SrutiBAskara
 SrutimImAMsA
 SrutiraYjinI
 SrOtaprayoga
+SrOtARqabilA
 SrOtAntyezwi
 SlokatarpaRa
 SvetopAKyAna
@@ -29748,7 +29749,6 @@ SrImadazwaka
 SrIraNgadAsa
 SrIvarivasyA
 SrOtaBAskara
-SrOtARqabilA
 SlokapaYcaka
 SlokavArtika
 zawpadyamAlA

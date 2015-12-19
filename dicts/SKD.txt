@@ -1946,6 +1946,7 @@ kzmABft
 GaRwikA
 cAmpilA
 cuYcurI
+jampatI
 jyotsnI
 jvalakA
 JallarI
@@ -2811,7 +2812,6 @@ culumpa
 cullakI
 jaNgula
 jantulA
-jampatI
 jayantI
 trikawu
 tridalA
@@ -3895,6 +3895,7 @@ corikA
 CawABA
 jatUkA
 jananI
+jyezWA
 JAwikA
 JirikA
 JIrukA
@@ -4325,6 +4326,7 @@ gajaBakzA
 gaqqarikA
 galestanI
 gopaGoRwA
+candanIyA
 campApurI
 jawAvallI
 jalAtmikA
@@ -4597,7 +4599,6 @@ capalA
 cireRa
 jalAkA
 jalukA
-jyezWA
 tapanI
 tamasA
 tArakA
@@ -4964,7 +4965,6 @@ ganDavatI
 gamBArikA
 gomUtrikA
 caturTikA
-candanIyA
 cAkaciccA
 citrapadA
 civillikA
@@ -5588,6 +5588,7 @@ jarAsanDajit
 jalamUrttikA
 jahnusaptamI
 tiktataRqulA
+trapukarkawI
 tridivodBavA
 triDArasnuhI
 tvagdozApahA
@@ -5622,6 +5623,7 @@ laGusadAPalA
 vanacandrikA
 vigatArttavA
 vizRudEvatyA
+vfttakarkawI
 vfttamallikA
 vfzyaganDikA
 SasyamaYjarI
@@ -5741,6 +5743,7 @@ yojanavallI
 raktatrivft
 ramBAtftIyA
 rasamaYjarI
+rAjakarkawI
 rAjapawwikA
 rAvaRagaNgA
 laGuKawvikA
@@ -6957,6 +6960,7 @@ DarmmacakraBft
 nilimpanirJarI
 mahAtamaHpraBA
 mahizamarddinI
+mAkzIkaSarkarA
 mArjArakarRikA
 raktapunarnavA
 vastraputtrikA
@@ -14907,7 +14911,6 @@ prapadaM
 prabAlaH
 pramARaM
 prayARaM
-pravaraM
 pravahlI
 praveRiH
 prAcIraM
@@ -17583,7 +17586,6 @@ maDyamapARqavaH
 markawatindukaH
 mahAmftyuYjayaH
 mahArAjopacAraH
-mAkzIkaSarkkarA
 mAtulaputtrakaH
 miTyADyavasitiH
 miTyABiSaMsanaM
@@ -18539,7 +18541,6 @@ tucCaDAnyakaM
 turagalIlakaH
 turaNgapriyaH
 tUlakArmmukaM
-trapukarkkawI
 triMSatpatraM
 tripizwapasat
 tripurAntakaH
@@ -19001,10 +19002,8 @@ vismayAnvitaH
 vIjopticakraM
 vIratarAsanaM
 vIropajIvikaH
-vfttakarkkawI
 vfttataRqulaH
 vfdDasUtrakaM
-veRukarkkaraH
 veliBukpriyaH
 veSmakaliNgaH
 vEyAGrapadyaH
@@ -20522,7 +20521,6 @@ rasikeSvaraH
 rAkzasendraH
 rAgaprasavaH
 rAjakadambaH
-rAjakarkkawI
 rAjakzavakaH
 rAjaKarjjUrI
 rAjacihnakaM
@@ -20713,6 +20711,7 @@ vfzwijIvanaH
 vfhajjIvantI
 vfhatpAwaliH
 veRIsaMhAraH
+veRukarkaraH
 vetAlaBawwaH
 vetraDArakaH
 vedanindakaH
@@ -26455,7 +26454,7 @@ yamapriyaH
 yamavrataM
 yamAntakaH
 yavakzAraH
-yavakzodeH
+yavakzodaH
 yavagaRqaH
 yavadvIpaH
 yavanezwaM
@@ -33456,6 +33455,7 @@ prarUQaH
 pravaktA
 pravaRaH
 pravayAH
+pravaraM
 pravaraH
 pravIRaH
 pravIraH
