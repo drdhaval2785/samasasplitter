@@ -54,7 +54,15 @@ def createhwlist(dictname):
 #createhwlist('MD')
 def readwords(dictionary):
 	return open(dictionary).read().split()
-	
+def readmwkey2():
+	fin = codecs.open('dicts/mw2.txt','r','utf-8')
+	lines = fin.readlines()
+	lines = triming(lines)
+	pairs = []
+	for line in lines:
+		[word,split] = line.split(':')
+		pairs.append((word,split))
+	return pairs
 def unique(lst):
 	output = []
 	for member in lst:
@@ -156,6 +164,10 @@ if __name__=="__main__":
 	words = readwords(dictionary)
 	global solutions
 	solutions = {}
+	knownpairs = readmwkey2()
+	for (a,b) in knownpairs:
+		if inputword == a:
+			exit(1)
 	test = infer_spaces(inputword,dictionary)
 	testparts = test[0].split('+')
 	if test[-2] is not '+' :
