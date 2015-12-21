@@ -23,13 +23,24 @@ import re
 from math import log
 import split as sp
 
+def timestamp():
+	return datetime.datetime.now()
 def dictlnumback(dicts,lnums):
 	output = ''
 	for i in xrange(len(dicts)):
 		output += ","+dicts[i]+";"+lnums[i]
 	output = output.strip(',')
 	return output
+
+knownpairs = sp.readmwkey2()
 def definitecompound(inputword,dictionary):
+	global knownpairs, knownsplitcounter
+	knownbreak = list(set([b for (a,b) in knownpairs if inputword==a]))
+	if len(knownbreak) > 0:
+		knownsplitcounter += 1
+		if len(knownbreak) > 1:
+			print inputword, 'has more than two possible breaks.', knownbreak
+		return (inputword,knownbreak[0])
 	comp = sp.infer_spaces(inputword,dictionary)
 	splits = comp.split('+')
 	if len(splits) > 1:
@@ -50,10 +61,20 @@ if __name__=="__main__":
 	dictionary = 'dicts/mwb.txt'
 	if len(sys.argv) == 2:
 		dictionary = 'dicts/'+sys.argv[1]+'.txt'
+	counter = 0
+	samasacounter = 0
+	knownsplitcounter = 0
+	print "Data would be put in compoundstudy.txt"
+	print "Will notify after every 100 samAsas split in the following format"
+	print "Splits - <samasa_separated> / <words_examined>, Known splits - <words_split_from_mw_key_2_splits>"
+	data = []
 	for (word,dicts,lnums) in sanhw2:
 		(hw,split) = definitecompound(word,dictionary)
+		counter += 1
 		if hw is not '':
-			print hw, '-', split
+			samasacounter += 1
+			if samasacounter % 100 == 0:
+				print 'Splits -',samasacounter, '/', counter, ', Known splits -', knownsplitcounter
 			fout.write(hw+":"+split+":"+dictlnumback(dicts,lnums)+"\n")
 	fout.close()	
 	
