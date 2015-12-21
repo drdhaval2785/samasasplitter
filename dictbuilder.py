@@ -130,6 +130,25 @@ def mwcomponentdata():
 		fout.write(a+"\n")
 	print "Completed adding data to mwb.txt"
 	fout.close()
+def mwsplitlist():
+	# Parsing the XMLs. We will use them as globals when need be.
+	print "Preparing data of MW from mw.xml"
+	mw = etree.parse('../Cologne_localcopy/mw/mwxml/xml/mw.xml') # parses the XML file.
+	print 'Parsing over.'
+	out = [member.text for member in mw.xpath('/mw/*/h/key2')]
+	fout = codecs.open('dicts/mw2.txt','w','utf-8')
+	print len(out)
+	samasamembers = []
+	for i in xrange(len(out)):
+		member = out[i]
+		if member is not None:
+			member = mwstrip(member)
+			if '-' in member:
+				unsplit = member.replace('-','')
+				member = member.replace('-','+')
+				fout.write(unsplit+':'+member+'\n')
+	print "Completed adding data to mw2.txt"
+	fout.close()
 
 if __name__=="__main__":
 	"""
@@ -137,6 +156,6 @@ if __name__=="__main__":
 	sanhw2 = sorted(sanhw2, key=lambda x: (len(x[1]),len(x[0])), reverse=True)
 	colognedata()
 	gerarddata()
-	"""
 	mwcomponentdata()
-	
+	"""
+	mwsplitlist()
