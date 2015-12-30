@@ -6,8 +6,8 @@ import datetime
 import itertools
 from lxml import etree
 from io import StringIO, BytesIO
-import re
 from math import log
+import transcoder
 
 # Function to return timestamp
 def timestamp():
@@ -20,6 +20,21 @@ def triming(lst):
 		output.append(member)
 	return output
 
+def preparation(inputfile,translit='deva'):
+	infile = codecs.open(inputfile,'r','utf-8')
+	inputwords = infile.read().split()
+	inputwords = triming(inputwords)
+	output = []
+	for word in inputwords:
+		word = transcoder.transcoder_processString(word,'deva','slp1')
+		if re.search('[^A-Za-z]',word):
+			word = re.sub('[^A-Za-z]','',word)
+			if not word == '':
+				output.append(word)
+		else:
+			output.append(word)
+	return output
+	
 def sanhw2():
 	fin = codecs.open('../CORRECTIONS/sanhw2/sanhw2.txt','r','utf-8')
 	lines = fin.readlines()
@@ -73,7 +88,6 @@ def unique(lst):
 # Asked the procedure at http://stackoverflow.com/questions/34108900/optionally-replacing-a-substring-python
 def permut(word,lstrep,dictionary):
 	input_str = word
-
 	# make substitution list a dict for easy lookup
 	lstrep_map = dict(lstrep)
 	# a substitution is an index plus a string to substitute. build
@@ -113,9 +127,10 @@ def determ(word):
 
 #http://stackoverflow.com/questions/8870261/how-to-split-text-without-spaces-into-list-of-words/11642687#11642687
 def infer_spaces(s,dictionary):
-    words = open(dictionary).read().split()
-    wordcost = dict((k, log((i+1)*log(len(words)))) for i,k in enumerate(words)) 
-    maxword = max(len(x) for x in words)
+    global words
+    global wordcost
+    global maxword
+    #print len(words), len(wordcost), maxword
     """Uses dynamic programming to infer the location of spaces in a string
     without spaces."""
     # Build a cost dictionary, assuming Zipf's law and cost = -math.log(probability).
@@ -140,44 +155,59 @@ def infer_spaces(s,dictionary):
         assert c == cost[i]
         out.append(s[i-k:i])
         i -= k
-	# Alteration in the code to give only exact match.
-    """	
-    out = reversed(out)
-    reply = ''
-    for member in out:
-        if member in words:
-            reply += member+"+"
-        else:
-            reply = False
-    if reply is not False:
-        reply = reply.rstrip('+')
-    return reply
-    """
     return "+".join(reversed(out))
 
 if __name__=="__main__":
-	lstrep = [('A',('A','aa','aA','Aa','AA')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO'))]
+	"""
+	python split.py aDigrahaRa MW
+	or
+	python split.py input.txt MW output.txt
+	"""
+	lstrep = [('A',('A','aa','aA','Aa','AA','As')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa','as')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO')),('ar',('af','ar')),('d',('t','d')),('H',('H','s')),('S',('S','s','H')),('M',('m','M')),('y',('y','i','I')),('N',('N','m','M')),('Y',('Y','m','M')),('R',('R','m','M')),('n',('n','m','M')),('m',('m','M')),]
 	dictionary = 'dicts/MD.txt'
+	dictionary = 'dicts/'+sys.argv[2]+'.txt'
 	if len(sys.argv) == 3:
-		dictionary = 'dicts/'+sys.argv[2]+'.txt'
-	inputword = sys.argv[1]
+		inputwords = [sys.argv[1]]
+	if len(sys.argv) == 4:
+		outfile = codecs.open(sys.argv[3],'w','utf-8')
+		inputwords = preparation(sys.argv[1])
 	words = readwords(dictionary)
 	global solutions
 	solutions = {}
 	knownpairs = readmwkey2()
-	for (a,b) in knownpairs:
-		if inputword == a:
-			exit(1)
-	test = infer_spaces(inputword,dictionary)
-	testparts = test[0].split('+')
-	if test[-2] is not '+' :
-		print [test]
-	else:
-		perm = permut(sys.argv[1],lstrep,words)
-		output = []
-		for mem in perm:
-			split = infer_spaces(mem,dictionary)
-			if split is not False:
-				output.append(split)
-		output = sorted(output,key=len)
-		print output[:5]
+	print 'Calculating costs of dictionary headwords', timestamp()
+	words = open(dictionary).read().split()
+	wordcost = dict((k, log((i+1)*log(len(words)))) for i,k in enumerate(words)) 
+	maxword = max(len(x) for x in words)
+	print 'Calculated costs of dictionary headwords', timestamp()
+	for inputword in inputwords:
+		test = infer_spaces(inputword,dictionary)
+		if any(a == inputword for (a,b) in knownpairs):
+			if len(sys.argv) == 4:
+				outfile.write(inputword+':'+inputword+':1\n')
+			print inputword, '1'
+		elif not re.search('[+]',test):
+			if len(sys.argv) == 4:
+				outfile.write(inputword+':'+inputword+':2\n')
+			print inputword, '2'
+		else:
+			perm = [inputword]
+			perm += permut(inputword,lstrep,words)
+			output = []
+			for mem in perm:
+				split = infer_spaces(mem,dictionary)
+				if split is not False:
+					output.append(split)
+			output = sorted(output,key=lambda x:x.count('+'))
+			print len(output)
+			#output = [member for member in output if not re.search('[+][^AsmMH][+]',member) and not re.search('[+][^mMsH]{1}$',member)] # Remove the splits which have single letter members.
+			print len(output)
+			if len(output) == 1 and output == [inputword]:
+				if len(sys.argv) == 4:
+					outfile.write(inputword+':'+inputword+':3\n')
+				print inputword, '3'
+			else:
+				if len(sys.argv) == 4:
+					outfile.write(inputword+':'+output[0]+':4\n')
+				print output[0], '4'
+	print timestamp()
