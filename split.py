@@ -163,7 +163,7 @@ if __name__=="__main__":
 	or
 	python split.py input.txt MW output.txt
 	"""
-	lstrep = [('A',('A','aa','aA','Aa','AA','As')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa','as')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO')),('ar',('af','ar')),('d',('t','d')),('H',('H','s')),('S',('S','s','H')),('M',('m','M')),('y',('y','i','I')),('N',('N','m','M')),('Y',('Y','m','M')),('R',('R','m','M')),('n',('n','m','M')),('m',('m','M')),]
+	lstrep = [('A',('A','aa','aA','Aa','AA','As')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa','as')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO')),('ar',('af','ar')),('d',('t','d')),('H',('H','s')),('S',('S','s','H')),('M',('m','M')),('y',('y','i','I')),('N',('N','m','M')),('Y',('Y','m','M')),('R',('R','m','M')),('n',('n','m','M')),('m',('m','M')),('v',('v','u','U')),('r',('r','s','H')),]
 	dictionary = 'dicts/MD.txt'
 	dictionary = 'dicts/'+sys.argv[2]+'.txt'
 	if len(sys.argv) == 3:
@@ -199,9 +199,7 @@ if __name__=="__main__":
 				if split is not False:
 					output.append(split)
 			output = sorted(output,key=lambda x:x.count('+'))
-			print len(output)
-			#output = [member for member in output if not re.search('[+][^AsmMH][+]',member) and not re.search('[+][^mMsH]{1}$',member)] # Remove the splits which have single letter members.
-			print len(output)
+			output = [member for member in output if not re.search('[+][^AsmMH][+]',member) and not re.search('[+][^mMsH]{1}$',member)] # Remove the splits which have single letter members.
 			if len(output) == 1 and output == [inputword]:
 				if len(sys.argv) == 4:
 					outfile.write(inputword+':'+inputword+':3\n')
