@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+"""
+python split.py aDigrahaRa MW
+or
+python split.py batchprocess/input.txt MW batchprocess/output.txt
+"""
 import sys, re
 import codecs
 import string
@@ -66,9 +71,13 @@ def createhwlist(dictname):
 	fout.close()
 	print len(hw)
 	print "Created headword data of sanhw2.txt"
-#createhwlist('MD')
 def readwords(dictionary):
 	return open(dictionary).read().split()
+def startingpatterns(words):
+	output = []
+	for word in words:
+		output += [word[2:x] for x in range(len(word))]
+	return output
 def readmwkey2():
 	fin = codecs.open('dicts/mw2.txt','r','utf-8')
 	lines = fin.readlines()
@@ -84,9 +93,9 @@ def unique(lst):
 		if member not in output:
 			output.append(member)
 	return output
-
 # Asked the procedure at http://stackoverflow.com/questions/34108900/optionally-replacing-a-substring-python
-def permut(word,lstrep,dictionary):
+def permut(word,lstrep):
+	global startpatterns # words from dictionary base
 	input_str = word
 	# make substitution list a dict for easy lookup
 	lstrep_map = dict(lstrep)
@@ -105,9 +114,9 @@ def permut(word,lstrep,dictionary):
 		for i, cc in sub:
 			input_list[i] = cc
 		out.append(''.join(input_list))
-	out = unique(out)
+	out = list(set(out))
 	out = sorted(out, key=len)
-	return out
+	return out 
 replas = [('kk','k'),('kK','K'),('gg','g'),('gG','G'),('NN','N'),('cc','c'),('cC','C'),('jj','j'),('jJ','J'),('YY','Y'),('ww','w'),('wW','W'),('qq','q'),('qQ','Q'),('RR','R'),('tt','t'),('tT','T'),('dd','d'),('dD','D'),('nn','n'),('pp','p'),('pP','P'),('bb','b'),('bB','B'),('mm','m'),('yy','y'),('rr','r'),('ll','l'),('vv','v'),('SS','S'),('zz','z'),('ss','s'),('hh','h'),('y','i'),('y','I'),('v','u'),('v','U'),]
 def deduplicate(word):
 	global replas
@@ -158,12 +167,7 @@ def infer_spaces(s,dictionary):
     return "+".join(reversed(out))
 
 if __name__=="__main__":
-	"""
-	python split.py aDigrahaRa MW
-	or
-	python split.py input.txt MW output.txt
-	"""
-	lstrep = [('A',('A','aa','aA','Aa','AA','As')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa','as')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO')),('ar',('af','ar')),('d',('t','d')),('H',('H','s')),('S',('S','s','H')),('M',('m','M')),('y',('y','i','I')),('N',('N','m','M')),('Y',('Y','m','M')),('R',('R','m','M')),('n',('n','m','M')),('m',('m','M')),('v',('v','u','U')),('r',('r','s','H')),]
+	lstrep = [('A',('A','aa','aA','Aa','AA','As')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa','as')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO')),('ar',('af','ar')),('d',('t','d')),('H',('H','s')),('S',('S','s','H')),('M',('m','M')),('y',('y','i','I')),('N',('N','M')),('Y',('Y','M')),('R',('R','M')),('n',('n','M')),('m',('m','M')),('v',('v','u','U')),('r',('r','s','H')),]
 	dictionary = 'dicts/MD.txt'
 	dictionary = 'dicts/'+sys.argv[2]+'.txt'
 	if len(sys.argv) == 3:
@@ -171,12 +175,12 @@ if __name__=="__main__":
 	if len(sys.argv) == 4:
 		outfile = codecs.open(sys.argv[3],'w','utf-8')
 		inputwords = preparation(sys.argv[1])
-	words = readwords(dictionary)
 	global solutions
 	solutions = {}
 	knownpairs = readmwkey2()
 	print 'Calculating costs of dictionary headwords', timestamp()
-	words = open(dictionary).read().split()
+	words = readwords(dictionary)
+	startpatterns = startingpatterns(words)
 	wordcost = dict((k, log((i+1)*log(len(words)))) for i,k in enumerate(words)) 
 	maxword = max(len(x) for x in words)
 	print 'Calculated costs of dictionary headwords', timestamp()
@@ -192,7 +196,7 @@ if __name__=="__main__":
 			print inputword, '2'
 		else:
 			perm = [inputword]
-			perm += permut(inputword,lstrep,words)
+			perm += permut(inputword,lstrep)
 			output = []
 			for mem in perm:
 				split = infer_spaces(mem,dictionary)
@@ -204,8 +208,11 @@ if __name__=="__main__":
 				if len(sys.argv) == 4:
 					outfile.write(inputword+':'+inputword+':3\n')
 				print inputword, '3'
+			elif len(output) == 0:
+				print inputword, '4'
+				outfile.write(inputword+':'+inputword+':4\n')
 			else:
 				if len(sys.argv) == 4:
-					outfile.write(inputword+':'+output[0]+':4\n')
-				print output[0], '4'
+					outfile.write(inputword+':'+output[0]+':5\n')
+				print output[0], '5'
 	print timestamp()
