@@ -170,7 +170,6 @@ if __name__=="__main__":
 	debug = 0
 	lstrep = [('A',('A','aa','aA','Aa','AA','As')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa','as')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO')),('ar',('af','ar')),('d',('t','d')),('H',('H','s')),('S',('S','s','H')),('M',('m','M')),('y',('y','i','I')),('N',('N','M')),('Y',('Y','M')),('R',('R','M')),('n',('n','M')),('m',('m','M')),('v',('v','u','U')),('r',('r','s','H')),]
 	dictionary = 'dicts/MD.txt'
-	print len(sys.argv)
 	if len(sys.argv) > 2:
 		dictionary = 'dicts/'+sys.argv[2]+'.txt'
 	if len(sys.argv) > 1:
@@ -214,11 +213,12 @@ if __name__=="__main__":
 					outfile.write(inputword+':'+inputword+':3\n')
 				print inputword, '3'
 			elif len(output) == 0:
+				if len(sys.argv)==4:
+					outfile.write(inputword+':'+inputword+':4\n')
 				print inputword, '4'
-				outfile.write(inputword+':'+inputword+':4\n')
 			else:
 				if len(sys.argv) == 4:
 					outfile.write(inputword+':'+output[0]+':5\n')
-				print output[0], '5'
+				print output[0:5], '5'
 	if debug == 1:
 		print timestamp()
