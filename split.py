@@ -94,8 +94,9 @@ def unique(lst):
 			output.append(member)
 	return output
 # Asked the procedure at http://stackoverflow.com/questions/34108900/optionally-replacing-a-substring-python
-def permut(word,lstrep):
+def permut(word,lstrep,dictionary):
 	global startpatterns # words from dictionary base
+	dictset = set(dictionary)
 	input_str = word
 	# make substitution list a dict for easy lookup
 	lstrep_map = dict(lstrep)
@@ -111,12 +112,14 @@ def permut(word,lstrep):
 	for sub in itertools.product(*subs):
 		# make input a list for easy substitution
 		input_list = list(input_str)
-		for i, cc in sub:
-			input_list[i] = cc
-		out.append(''.join(input_list))
+		for j, cc in sub:
+			if ''.join(input_list[0:2]) == word[0:2] and input_list[-1] == word[-1]:
+				if input_str[0:j]+cc[0] in dictset:
+					input_list[j] = cc
+					out.append(''.join(input_list))
 	out = list(set(out))
 	out = sorted(out, key=len)
-	return out 
+	return out
 replas = [('kk','k'),('kK','K'),('gg','g'),('gG','G'),('NN','N'),('cc','c'),('cC','C'),('jj','j'),('jJ','J'),('YY','Y'),('ww','w'),('wW','W'),('qq','q'),('qQ','Q'),('RR','R'),('tt','t'),('tT','T'),('dd','d'),('dD','D'),('nn','n'),('pp','p'),('pP','P'),('bb','b'),('bB','B'),('mm','m'),('yy','y'),('rr','r'),('ll','l'),('vv','v'),('SS','S'),('zz','z'),('ss','s'),('hh','h'),('y','i'),('y','I'),('v','u'),('v','U'),]
 def deduplicate(word):
 	global replas
@@ -167,7 +170,7 @@ def infer_spaces(s,dictionary):
     return "+".join(reversed(out))
 
 if __name__=="__main__":
-	debug = 0
+	debug = 1
 	lstrep = [('A',('A','aa','aA','Aa','AA','As')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa','as')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO')),('ar',('af','ar')),('d',('t','d')),('H',('H','s')),('S',('S','s','H')),('M',('m','M')),('y',('y','i','I')),('N',('N','M')),('Y',('Y','M')),('R',('R','M')),('n',('n','M')),('m',('m','M')),('v',('v','u','U')),('r',('r','s','H')),]
 	dictionary = 'dicts/mwb.txt'
 	if len(sys.argv) > 2:
@@ -195,6 +198,7 @@ if __name__=="__main__":
 	#print maxword
 	if debug == 1:
 		print 'Calculated maxword', timestamp()
+	counter = 0
 	for inputword in inputwords:
 		test = infer_spaces(inputword,dictionary)
 		if any(a == inputword for (a,b) in knownpairs):
@@ -207,7 +211,9 @@ if __name__=="__main__":
 			print inputword, '2'
 		else:
 			perm = [inputword]
-			perm += permut(inputword,lstrep)
+			perm += permut(inputword,lstrep,words)
+			print len(perm)
+			print timestamp()
 			output = []
 			for mem in perm:
 				split = infer_spaces(mem,dictionary)
@@ -227,5 +233,6 @@ if __name__=="__main__":
 				if len(sys.argv) == 4:
 					outfile.write(inputword+':'+output[0]+':5\n')
 				print output[0:5], '5'
+				#print output[0], '5'
 	if debug == 1:
 		print timestamp()
