@@ -120,6 +120,32 @@ def permut(word,lstrep,dictionary):
 	out = list(set(out))
 	out = sorted(out, key=len)
 	return out
+def permut1(word,lstrep,dictionary):
+	global startpatterns # words from dictionary base
+	dictset = set(dictionary)
+	input_str = word
+	# make substitution list a dict for easy lookup
+	lstrep_map = dict(lstrep)
+	# a substitution is an index plus a string to substitute. build
+	# list of subs [[(index1, sub1), (index1, sub2)], ...] for all
+	# characters in lstrep_map.
+	subs = []
+	for i, c in enumerate(input_str):
+		if c in lstrep_map:
+			subs.append([(i, sub) for sub in lstrep_map[c]])
+	# build output by applying each sub recorded
+	out = []
+	for sub in itertools.product(*subs):
+		# make input a list for easy substitution
+		input_list = list(input_str)
+		for j, cc in sub:
+			if ''.join(input_list[0:2]) == word[0:2] and input_list[-1] == word[-1]:
+				if input_str[0:j]+cc[0] in dictset:
+					input_list[j] = cc
+					out.append(''.join(input_list))
+	out = list(set(out))
+	out = sorted(out, key=len)
+	return out
 replas = [('kk','k'),('kK','K'),('gg','g'),('gG','G'),('NN','N'),('cc','c'),('cC','C'),('jj','j'),('jJ','J'),('YY','Y'),('ww','w'),('wW','W'),('qq','q'),('qQ','Q'),('RR','R'),('tt','t'),('tT','T'),('dd','d'),('dD','D'),('nn','n'),('pp','p'),('pP','P'),('bb','b'),('bB','B'),('mm','m'),('yy','y'),('rr','r'),('ll','l'),('vv','v'),('SS','S'),('zz','z'),('ss','s'),('hh','h'),('y','i'),('y','I'),('v','u'),('v','U'),]
 def deduplicate(word):
 	global replas
