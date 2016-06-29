@@ -32,17 +32,17 @@ def reps(letter,lstrep1):
 			output.append(''.join(lst))
 	return output
 
-def permut(word):
+def startposition(word):
 	global lstrep1, dictionary
 	# build output by applying each sub recorded
-	out = []
-	if word in dictionary:
-		out.append(word)
+	out = {}
+	allowed = st1(word,dictionary)
+	dictset = set(dictionary)
+	input_str = word
+	subs = []
+	if word in dictset:
+		out = word
 	else:
-		allowed = st1(inputword,dictionary)
-		dictset = set(dictionary)
-		input_str = word
-		subs = []
 		for i, c in enumerate(input_str):
 			for (a,b) in lstrep1:
 				if c == a:
@@ -53,12 +53,15 @@ def permut(word):
 			if len(entry) > 0:
 				eligentries =  [(a,b) for (a,b) in entry[0] if allow[-1]==a]
 				if len(eligentries) > 0:
+					nextones = []
 					for eligen in eligentries:
-						out.append((len(allow), allow[:-1]+eligen[0], eligen[1]+word[len(allow):]))
+						nextones.append(startposition(eligen[1]+word[len(allow):]))
+					out[allow[:-1]+eligen[0]] = nextones
 	return out
+
 if __name__=="__main__":
 	print datetime.datetime.now()
 	inputword = sys.argv[1]
-	print permut(inputword)
+	print startposition(inputword)
 	print datetime.datetime.now()
 	
