@@ -29,11 +29,10 @@ def reps(letter,lstrep1):
 	return output
 
 def startposition(word):
-	global lstrep1, dictionary
+	global lstrep1, dictionary, dictset
 	# build output by applying each sub recorded
 	out = {}
 	allowed = st1(word,dictionary)
-	dictset = set(dictionary)
 	input_str = word
 	subs = []
 	if word in dictset:
@@ -56,12 +55,12 @@ def startposition(word):
 	if len(out) > 0:
 		return out
 	else:
-		return None
+		return 'None'
 
 def printsplit(split):
 	for key, lst in split.iteritems():
 		for member in lst:
-			if member == None:
+			if member == 'None':
 				pass
 			elif type(member) == str:
 				return key+'+'+member
@@ -69,15 +68,19 @@ def printsplit(split):
 				pass
 			else:
 				return key+'+'+printsplit(member)
+def removenone(lst):
+	return [member for member in lst if not member == None]
 if __name__=="__main__":
 	print datetime.datetime.now()
 	lstrep = [('A',('A','aa','aA','Aa','AA','As')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa','as')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO')),('ar',('af','ar')),('d',('t','d')),('H',('H','s')),('S',('S','s','H')),('M',('m','M')),('y',('y','i','I')),('N',('N','M')),('Y',('Y','M')),('R',('R','M')),('n',('n','M')),('m',('m','M')),('v',('v','u','U')),('r',('r','s','H')),]
 	lstrep1 = [('A',(('a','a'),('a','A'),('A','a'),('A','A'),('As',''))),('I',(('i','i'),('i','I'),('I','i'),('I','I'))),('U',(('u','u'),('u','U'),('U','u'),('U','U'))),('F',(('f','f'),('f','x'),('x','f'),('F','x'),('x','F'),('F','F'))),('e',(('e','a'),('a','i'),('a','I'),('A','i'),('A','I'))),('o',(('o','a'),('a','u'),('a','U'),('A','u'),('A','U'),('aH',''),('aH','a'),('as',''))),('E',(('a','e'),('A','e'),('a','E'),('A','E'))),('O',(('a','o'),('A','o'),('a','O'),('A','O'))),('ar',(('a','f'),)),('d',(('t',''),)),('H',(('s',''),)),('S',(('s',''),('H',''))),('M',(('m',''),)),('y',(('i',''),('I',''))),('N',(('M',''),)),('Y',(('M',''),)),('R',(('M',''),)),('n',(('M',''),)),('m',(('M',''),)),('v',(('u',''),('U',''))),('r',(('s',''),('H','')))]
 	dicti = 'dicts/md.txt'
 	dictionary = open(dicti).read().split()
+	dictset = set(dictionary)
 	inputword = sys.argv[1]
 	split = startposition(inputword)
-	print printsplit(split)
-	#print split
+	print split
+	#print removenone(split)
+	#print printsplit(split)
 	print datetime.datetime.now()
 	
