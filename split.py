@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-python split.py aDigrahaRa MW
+python split.py aDigrahaRa MD
 or
 python split.py batchprocess/input.txt MW batchprocess/output.txt
 """
@@ -230,15 +230,15 @@ if __name__=="__main__":
 		if any(a == inputword for (a,b) in knownpairs):
 			if len(sys.argv) == 4:
 				outfile.write(inputword+':'+inputword+':1\n')
-			print inputword, '1'
+			#print inputword, '1'
 		elif not re.search('[+]',test):
 			if len(sys.argv) == 4:
 				outfile.write(inputword+':'+inputword+':2\n')
-			print inputword, '2'
+			#print inputword, '2'
 		else:
 			perm = [inputword]
 			perm += permut(inputword,lstrep,words)
-			print len(perm)
+			print 'valid permutations are', len(perm)
 			print timestamp()
 			output = []
 			for mem in perm:
@@ -247,6 +247,7 @@ if __name__=="__main__":
 					output.append(split)
 			output = sorted(output,key=lambda x:x.count('+'))
 			output = [member for member in output if not re.search('[+][^AsmMH][+]',member) and not re.search('[+][^mMsH]{1}$',member)] # Remove the splits which have single letter members.
+			output = unique(output)
 			if len(output) == 1 and output == [inputword]:
 				if len(sys.argv) == 4:
 					outfile.write(inputword+':'+inputword+':3\n')
@@ -259,6 +260,5 @@ if __name__=="__main__":
 				if len(sys.argv) == 4:
 					outfile.write(inputword+':'+output[0]+':5\n')
 				print output[0:5], '5'
-				#print output[0], '5'
 	if debug == 1:
 		print timestamp()
