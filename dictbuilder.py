@@ -50,7 +50,7 @@ def sanhw2():
 		output.append((word,dicts,lnums))
 	return output
 def createhwlist(dict):
-	print "Creating headword data of", dict
+	print("Creating headword data of", dict)
 	fout = codecs.open('dicts/'+dict+'.txt','w','utf-8')
 	hw = []
 	for (hword,dicts,lnums) in sanhw2:
@@ -58,8 +58,8 @@ def createhwlist(dict):
 			fout.write(hword+"\n")
 			hw.append(hword)
 	fout.close()
-	print len(hw)
-	print "Created headword data of", dict 
+	print(len(hw))
+	print("Created headword data of", dict)
 
 def colognedata():
 	dictionaryname = ["ACC","CAE","AE","AP90","AP","BEN","BHS","BOP","BOR","BUR","CCS","GRA","GST","IEG","INM","KRM","MCI","MD","MW72","MW","MWE","PD","PE","PGN","PUI","PWG","PW","SCH","SHS","SKD","SNP","STC","VCP","VEI","WIL","YAT","ALL"]
@@ -78,14 +78,14 @@ def upasarga():
 		
 def gerarddata():
 	# Parsing the XMLs. We will use them as globals when need be.
-	print "Preparing data of Gerard in gerard.txt"
+	print("Preparing data of Gerard in gerard.txt")
 	roots = etree.parse('../inriaxmlwrapper/SL_roots.xml') # parses the XML file.
 	nouns = etree.parse('../inriaxmlwrapper/SL_nouns.xml')
 	adverbs = etree.parse('../inriaxmlwrapper/SL_adverbs.xml')
 	final = etree.parse('../inriaxmlwrapper/SL_final.xml')
 	parts = etree.parse('../inriaxmlwrapper/SL_parts.xml')
 	pronouns = etree.parse('../inriaxmlwrapper/SL_pronouns.xml')
-	print 'Parsing over.'
+	print('Parsing over.')
 	out = []
 	for x in [nouns,roots,pronouns,final,parts,adverbs]:
 		# Storing data
@@ -97,7 +97,7 @@ def gerarddata():
 	fout = codecs.open('dicts/gerard.txt','w','utf-8')
 	for mem in out:
 		fout.write(mem+"\n")
-	print "Completed adding data to gerard.txt"
+	print("Completed adding data to gerard.txt")
 	fout.close()
 def mwstrip(word):
 	reps = ["/","'","^",">"]
@@ -108,12 +108,12 @@ def mwstrip(word):
 	return word
 def mwcomponentdata():
 	# Parsing the XMLs. We will use them as globals when need be.
-	print "Preparing data of MW from mw.xml"
+	print("Preparing data of MW from mw.xml")
 	mw = etree.parse('../Cologne_localcopy/mw/mwxml/xml/mw.xml') # parses the XML file.
-	print 'Parsing over.'
+	print('Parsing over.')
 	out = [member.text for member in mw.xpath('/mw/*/h/key2')]
 	fout = codecs.open('dicts/mwb.txt','w','utf-8')
-	print len(out)
+	print(len(out))
 	samasamembers = []
 	for i in xrange(len(out)):
 		member = out[i]
@@ -128,16 +128,16 @@ def mwcomponentdata():
 	count = sorted(count, key=lambda x:(x[1],len(x[0])),reverse=True)
 	for (a,b) in count:
 		fout.write(a+"\n")
-	print "Completed adding data to mwb.txt"
+	print("Completed adding data to mwb.txt")
 	fout.close()
 def mwsplitlist():
 	# Parsing the XMLs. We will use them as globals when need be.
-	print "Preparing data of MW from mw.xml"
+	print("Preparing data of MW from mw.xml")
 	mw = etree.parse('../Cologne_localcopy/mw/mwxml/xml/mw.xml') # parses the XML file.
-	print 'Parsing over.'
+	print('Parsing over.')
 	out = [member.text for member in mw.xpath('/mw/*/h/key2')]
 	fout = codecs.open('dicts/mw2.txt','w','utf-8')
-	print len(out)
+	print(len(out))
 	samasamembers = []
 	for i in xrange(len(out)):
 		member = out[i]
@@ -147,7 +147,7 @@ def mwsplitlist():
 				unsplit = member.replace('-','')
 				member = member.replace('-','+')
 				fout.write(unsplit+':'+member+'\n')
-	print "Completed adding data to mw2.txt"
+	print("Completed adding data to mw2.txt")
 	fout.close()
 
 if __name__=="__main__":

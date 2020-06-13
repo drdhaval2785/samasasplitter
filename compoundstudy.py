@@ -39,7 +39,7 @@ def definitecompound(inputword,dictionary):
 	if len(knownbreak) > 0:
 		knownsplitcounter += 1
 		if len(knownbreak) > 1:
-			print inputword, 'has more than two possible breaks.', knownbreak
+			print(inputword, 'has more than two possible breaks.', knownbreak)
 		return (inputword,knownbreak[0])
 	comp = sp.infer_spaces(inputword,dictionary)
 	splits = comp.split('+')
@@ -54,9 +54,9 @@ def definitecompound(inputword,dictionary):
 		
 	
 if __name__=="__main__":
-	print "Creating sanhw2 data"
+	print("Creating sanhw2 data")
 	sanhw2 = sp.sanhw2()
-	print "Created sanhw2 data"
+	print("Created sanhw2 data")
 	fout = codecs.open('compoundstudy/compoundhw.txt','w','utf-8')
 	dictionary = 'dicts/mwb.txt'
 	if len(sys.argv) == 2:
@@ -64,9 +64,9 @@ if __name__=="__main__":
 	counter = 0
 	samasacounter = 0
 	knownsplitcounter = 0
-	print "Data would be put in compoundstudy.txt"
-	print "Will notify after every 100 samAsas split in the following format"
-	print "Splits - <samasa_separated> / <words_examined>, Known splits - <words_split_from_mw_key_2_splits>"
+	print("Data would be put in compoundstudy.txt")
+	print("Will notify after every 100 samAsas split in the following format")
+	print("Splits - <samasa_separated> / <words_examined>, Known splits - <words_split_from_mw_key_2_splits>")
 	data = []
 	for (word,dicts,lnums) in sanhw2:
 		(hw,split) = definitecompound(word,dictionary)
@@ -74,7 +74,7 @@ if __name__=="__main__":
 		if hw is not '':
 			samasacounter += 1
 			if samasacounter % 100 == 0:
-				print 'Splits -',samasacounter, '/', counter, ', Known splits -', knownsplitcounter
+				print('Splits -',samasacounter, '/', counter, ', Known splits -', knownsplitcounter)
 			fout.write(hw+":"+split+":"+dictlnumback(dicts,lnums)+"\n")
 	fout.close()	
 	

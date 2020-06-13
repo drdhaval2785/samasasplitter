@@ -50,14 +50,14 @@ def transcoder_fsm(sfrom,to) :
  
  filein = transcoder_dir + '/' + fromto + ".xml"
  if (not os.path.exists(filein)) :
-  #  print "file does not exist = " + filein
+  #  print("file does not exist = " + filein)
   return
-  # print "file exists = " + filein
+  # print("file exists = " + filein)
  tree = ET.parse(filein)
  xml = tree.getroot()
  attributes = xml.attrib
  # for a in attributes:
- #  print a + "," + attributes[a]
+ #  print(a + "," + attributes[a])
  start = attributes['start']  ## required
  entries = list(xml)  ## children
  fsm = {} ## finite state machine to construct
@@ -126,10 +126,10 @@ def transcoder_fsm(sfrom,to) :
   fsmentries.append(fsmentry)
   
   #for k in fsmentry.keys():
-  # print k,"=>",fsmentry[k]
-  #  print (sval,inval,outval,nextval),etree.tostring(e)
+  # print(k,"=>",fsmentry[k])
+  #  print((sval,inval,outval,nextval),etree.tostring(e))
   
-  # print n,etree.tostring(e)
+  # print(n,etree.tostring(e))
   n += 1
 
  fsm['fsm']=fsmentries
@@ -141,7 +141,7 @@ def transcoder_fsm(sfrom,to) :
  ientry=0
  for fsmentry in fsmentries:
   inval = fsmentry['in']
-  #print "inval=",inval
+  #print("inval=",inval)
   # special logic for deva_slp1 for <in></in> <out>a</out>,
   # where inval is empty string
   if (len(inval)>0):
@@ -179,9 +179,9 @@ def transcoder_fsm(sfrom,to) :
     s.append("%s => %s" %(key,val))
    sout = ' , '.join(s)
    out = "fsmentry[%s]=%s" %(i,sout)
-   #print out.encode('utf-8')
+   #print(out.encode('utf-8'))
    fdbg.write("%s\n" % out)
-  #print "states=..."
+  #print("states=...")
   fdbg.write("states=...\n")
   for c in states:
    state = states[c]
@@ -190,7 +190,7 @@ def transcoder_fsm(sfrom,to) :
     y.append('%s' % i)
    x = ' '.join(y)
    out = "c=%s, state=%s" %(c,x)
-   #print out.encode('utf-8')
+   #print(out.encode('utf-8'))
    fdbg.write("%s\n" % out)
   fdbg.close()
 def to_unicode(x):
@@ -271,7 +271,7 @@ def transcoder_processString(line,from1,to) :
    nmatch=len(match)
    ##   echo "chk2: n=n, c='c', nmatch=nmatch<br>\n"
    #out = "chk2: n=%s, c='%s', nmatch=%s" %(n,c,nmatch)
-   #print out.encode('utf-8')
+   #print(out.encode('utf-8'))
    if (nmatch > nbest) :
     best = match
     nbest=nmatch

@@ -30,18 +30,19 @@ if __name__=="__main__":
 	fin = codecs.open('dicts/str_counter/str_counter.json','r','utf-8')
 	str_counter = json.load(fin)
 	fin.close()
-	print 'started analysis', timestamp()
+	print('started analysis', timestamp())
 
 	input = 'astyuttarasyAMdiSihimAlayonAmanagADirAjaH'
 	G = nx.DiGraph()
-	print 'Adding nodes', timestamp()
+	print('Adding nodes', timestamp())
 	G.add_nodes_from(xrange(len(input)))
-	print 'Added nodes', timestamp()
+	print('Added nodes', timestamp())
 	for x in xrange(len(input)):
 		for y in range(x+2,len(input)):
 			strng = input[x:y]
 			if strng in str_counter:
 				cnt = str_counter[strng]
 				G.add_edge(x,y, weight=cnt, string=strng)
-	print 'Added edges', timestamp()
-	print 'ended analysis', timestamp()
+	print('Added edges', timestamp())
+	print('ended analysis', timestamp())
+

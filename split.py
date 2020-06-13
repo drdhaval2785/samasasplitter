@@ -58,7 +58,7 @@ def sanhw2():
 		output.append((word,dicts,lnums))
 	return output
 def createhwlist(dictname):
-	print "Creating headword data of sanhw2.txt"
+	print("Creating headword data of sanhw2.txt")
 	global sanhw2
 	sanhw2 = sanhw2()
 	sanhw2 = sorted(sanhw2, key=lambda x: (len(x[1]),len(x[0])), reverse=True)
@@ -69,8 +69,8 @@ def createhwlist(dictname):
 			fout.write(hword+"\n")
 			hw.append(hword)
 	fout.close()
-	print len(hw)
-	print "Created headword data of sanhw2.txt"
+	print(len(hw))
+	print("Created headword data of sanhw2.txt")
 def readwords(dictionary):
 	return open(dictionary).read().split()
 def startingpatterns(words):
@@ -168,7 +168,7 @@ def infer_spaces(s,dictionary):
     global words
     global wordcost
     global maxword
-    #print len(words), len(wordcost), maxword
+    #print(len(words), len(wordcost), maxword)
     """Uses dynamic programming to infer the location of spaces in a string
     without spaces."""
     # Build a cost dictionary, assuming Zipf's law and cost = -math.log(probability).
@@ -209,37 +209,37 @@ if __name__=="__main__":
 	global solutions
 	solutions = {}
 	if debug == 1:
-		print 'Reading knownpairs', timestamp()
+		print('Reading knownpairs', timestamp())
 	knownpairs = readmwkey2()
 	if debug == 1:
-		print 'Calculating costs of dictionary headwords', timestamp()
+		print('Calculating costs of dictionary headwords', timestamp())
 	words = readwords(dictionary)
 	wordcost = dict((k, log((i+1)*log(len(words)))) for i,k in enumerate(words)) 
-	#print sys.argv[2]+"cost =",
-	#print wordcost
+	#print(sys.argv[2]+"cost =",)
+	#print(wordcost)
 	if debug == 1:
-		print 'Calculated costs of dictionary headwords', timestamp()
+		print('Calculated costs of dictionary headwords', timestamp())
 	maxword = max(len(x) for x in words)
-	#print sys.argv[2]+"maxword =",
-	#print maxword
+	#print(sys.argv[2]+"maxword =",)
+	#print(maxword)
 	if debug == 1:
-		print 'Calculated maxword', timestamp()
+		print('Calculated maxword', timestamp())
 	counter = 0
 	for inputword in inputwords:
 		test = infer_spaces(inputword,dictionary)
 		if any(a == inputword for (a,b) in knownpairs):
 			if len(sys.argv) == 4:
 				outfile.write(inputword+':'+inputword+':1\n')
-			#print inputword, '1'
+			#print(inputword, '1')
 		elif not re.search('[+]',test):
 			if len(sys.argv) == 4:
 				outfile.write(inputword+':'+inputword+':2\n')
-			#print inputword, '2'
+			#print(inputword, '2')
 		else:
 			perm = [inputword]
 			perm += permut(inputword,lstrep,words)
-			print 'valid permutations are', len(perm)
-			print timestamp()
+			print('valid permutations are', len(perm))
+			print(timestamp())
 			output = []
 			for mem in perm:
 				split = infer_spaces(mem,dictionary)
@@ -251,14 +251,14 @@ if __name__=="__main__":
 			if len(output) == 1 and output == [inputword]:
 				if len(sys.argv) == 4:
 					outfile.write(inputword+':'+inputword+':3\n')
-				print inputword, '3'
+				print(inputword, '3')
 			elif len(output) == 0:
 				if len(sys.argv)==4:
 					outfile.write(inputword+':'+inputword+':4\n')
-				print inputword, '4'
+				print(inputword, '4')
 			else:
 				if len(sys.argv) == 4:
 					outfile.write(inputword+':'+output[0]+':5\n')
-				print output[0:5], '5'
+				print(output[0:5], '5')
 	if debug == 1:
-		print timestamp()
+		print(timestamp())

@@ -32,19 +32,20 @@ def onlyhw():
 		output.append(line)
 	return output
 
-print timestamp()
+print(timestamp())
 #hw = hw1()
 hw = onlyhw()
 hw = sorted(hw)
-print timestamp()
+print(timestamp())
 def  sw(wordlist, word):
 	word_fragment = word[:-1]
 	inter = wordlist[bisect_left(wordlist, word_fragment):bisect_left(wordlist, word_fragment[:-1] + chr(ord(word_fragment[-1])+1))]
 	return [member for member in inter if len(member) == len(word)]
 startswith = sw(hw,'viS')
-print startswith
+print(startswith)
 """
 if 'aDISA' in startswith:
 	print 'aDISA'
 """
-print timestamp()
+print(timestamp())
+

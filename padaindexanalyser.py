@@ -28,7 +28,7 @@ if __name__=="__main__":
 	fout = codecs.open('dicts/padawords.txt','w','utf-8')
 	data = fin.readlines()
 	fin.close()
-	print "Reading lines"
+	print("Reading lines")
 	counter = 0
 	for datum in data:
 		dat = removetag(datum)
@@ -37,7 +37,7 @@ if __name__=="__main__":
 		for member in lst:
 			fout.write(finetune(member)+'\n')
 		if counter % 1000 == 0:
-			print counter
+			print(counter)
 	fout.close()
 	# part 2
 	fin = codecs.open('dicts/padawords.txt','r','utf-8')

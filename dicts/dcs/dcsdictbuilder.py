@@ -26,6 +26,6 @@ if __name__=="__main__":
 			if attribute in set(['mfn','nr','mf','fn','mn','adj','m','n','f']) and int(occurrence) > 1:
 				fout.write(word+'\n')
 	for member in attributetypes:
-		print member.encode('utf-8')
+		print(member.encode('utf-8'))
 	fin.close()
 	fout.close()
