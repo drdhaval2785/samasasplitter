@@ -4,13 +4,11 @@ python split.py aDigrahaRa MD
 or
 python split.py batchprocess/input.txt MW batchprocess/output.txt
 """
-import sys, re
+import sys
+import re
 import codecs
-import string
 import datetime
 import itertools
-from lxml import etree
-from io import StringIO, BytesIO
 from math import log
 import transcoder
 
@@ -56,7 +54,7 @@ def sanhw2():
         dicts = []
         lnums = []
         for dictwlnum in dictswithlnum:
-            [dict,lnum] = dictwlnum.split(';')
+            [dict, lnum] = dictwlnum.split(';')
             dicts.append(dict)  # ['CAE','CCS','MD','MW','PD','PW']
             lnums.append(lnum)  # [4,4,4,21,50,9]
         output.append((word, dicts, lnums))
@@ -138,7 +136,7 @@ def permut(word, lstrep, dictionary):
     return out
 
 
-def permut1(word,lstrep,dictionary):
+def permut1(word, lstrep, dictionary):
     global startpatterns  # words from dictionary base
     dictset = set(dictionary)
     input_str = word
@@ -166,7 +164,7 @@ def permut1(word,lstrep,dictionary):
     return out
 
 
-replas = [('kk','k'),('kK','K'),('gg','g'),('gG','G'),('NN','N'),('cc','c'),('cC','C'),('jj','j'),('jJ','J'),('YY','Y'),('ww','w'),('wW','W'),('qq','q'),('qQ','Q'),('RR','R'),('tt','t'),('tT','T'),('dd','d'),('dD','D'),('nn','n'),('pp','p'),('pP','P'),('bb','b'),('bB','B'),('mm','m'),('yy','y'),('rr','r'),('ll','l'),('vv','v'),('SS','S'),('zz','z'),('ss','s'),('hh','h'),('y','i'),('y','I'),('v','u'),('v','U'),]
+replas = [('kk', 'k'), ('kK', 'K'), ('gg', 'g'), ('gG', 'G'), ('NN', 'N'), ('cc', 'c'), ('cC', 'C'), ('jj', 'j'), ('jJ', 'J'), ('YY', 'Y'), ('ww', 'w'), ('wW', 'W'), ('qq', 'q'), ('qQ', 'Q'), ('RR', 'R'), ('tt', 't'), ('tT', 'T'), ('dd', 'd'), ('dD', 'D'), ('nn', 'n'), ('pp', 'p'), ('pP', 'P'), ('bb', 'b'), ('bB', 'B'), ('mm', 'm'), ('yy', 'y'), ('rr', 'r'), ('ll', 'l'), ('vv', 'v'), ('SS', 'S'), ('zz', 'z'), ('ss', 's'), ('hh', 'h'), ('y', 'i'), ('y', 'I'), ('v', 'u'), ('v', 'U')]
 
 
 def deduplicate(word):
@@ -176,7 +174,7 @@ def deduplicate(word):
     return word
 
 
-term = [('A','a'),('I','i'),('AH','a'),('AH','as'),('aH','as'),('H',''),('m',''),('M',''),('O',''),('I','a'),('e','a')]
+term = [('A', 'a'), ('I', 'i'), ('AH', 'a'), ('AH', 'as'), ('aH', 'as'), ('H', ''), ('m', ''), ('M', ''), ('O', ''), ('I', 'a'), ('e', 'a')]
 
 
 def determ(word):
@@ -189,7 +187,7 @@ def determ(word):
     return output
 
 
-#http://stackoverflow.com/questions/8870261/how-to-split-text-without-spaces-into-list-of-words/11642687#11642687
+# http://stackoverflow.com/questions/8870261/how-to-split-text-without-spaces-into-list-of-words/11642687#11642687
 def infer_spaces(s, dictionary):
     global words
     global wordcost
@@ -219,11 +217,56 @@ def infer_spaces(s, dictionary):
         assert c == cost[i]
         out.append(s[i - k:i])
         i -= k
-    return "+".join(reversed(out))
+    # return "+".join(reversed(out))
+    return list(reversed(out))
 
 
-if __name__=="__main__":
+def find_split(inputword, dictionary):
+    result = []
+    test = infer_spaces(inputword, dictionary)
+    if any(a == inputword for (a, b) in knownpairs):
+        result.append(test)
+        code = '1'
+    elif len(test) == 1:
+        result.append(test)
+        code = '2'
+    else:
+        perm = [inputword]
+        perm += permut(inputword, lstrep, words)
+        # print(perm)
+        # print('valid permutations are', len(perm))
+        # print(timestamp())
+        output = []
+        for mem in perm:
+            split = infer_spaces(mem, dictionary)
+            if split is not False:
+                output.append(split)
+        output = sorted(output, key=lambda x: len(x))
+        output1 = []
+        for member in output:
+            writeToOutput1 = True
+            for itm in member:
+                if re.search('^[AsmMH]$', itm):
+                    writeToOutput1 = False
+            if writeToOutput1:
+                output1.append(member)
+
+        output = unique(output1)
+        if len(output) == 1 and output == [inputword]:
+            result.append([inputword])
+            code = '3'
+        elif len(output) == 0:
+            result.append([inputword])
+            code = '4'
+        else:
+            result = output[0:5]
+            code = '5'
+    return {'code': code, 'splits': result}
+
+
+if __name__ == "__main__":
     debug = 1
+    global lstrep
     lstrep = [('A',('A','aa','aA','Aa','AA','As')),('I',('I','ii','iI','Ii','II')),('U',('U','uu','uU','Uu','UU')),('F',('F','ff','fx','xf','Fx','xF','FF')),('e',('e','ea','ai','aI','Ai','AI')),('o',('o','oa','au','aU','Au','AU','aH','aHa','as')),('E',('E','ae','Ae','aE','AE')),('O',('O','ao','Ao','aO','AO')),('ar',('af','ar')),('d',('t','d')),('H',('H','s')),('S',('S','s','H')),('M',('m','M')),('y',('y','i','I')),('N',('N','M')),('Y',('Y','M')),('R',('R','M')),('n',('n','M')),('m',('m','M')),('v',('v','u','U')),('r',('r','s','H')),]
     dictionary = 'dicts/md.txt'
     if len(sys.argv) > 2:
@@ -240,6 +283,9 @@ if __name__=="__main__":
     knownpairs = readmwkey2()
     if debug == 1:
         print('Calculating costs of dictionary headwords', timestamp())
+    global words
+    global wordcost
+    global maxword
     words = readwords(dictionary)
     wordcost = dict((k, log((i + 1) * log(len(words)))) for i, k in enumerate(words))
     # print(sys.argv[2]+"cost =",)
@@ -251,8 +297,9 @@ if __name__=="__main__":
     # print(maxword)
     if debug == 1:
         print('Calculated maxword', timestamp())
-    counter = 0
     for inputword in inputwords:
+        """
+        # Here we can create some kind of function.
         test = infer_spaces(inputword, dictionary)
         if any(a == inputword for (a, b) in knownpairs):
             if len(sys.argv) == 4:
@@ -287,5 +334,7 @@ if __name__=="__main__":
                 if len(sys.argv) == 4:
                     outfile.write(inputword + ':' + output[0] + ':5\n')
                 print(output[0:5], '5')
+        """
+        print(find_split(inputword, dictionary))
     if debug == 1:
         print(timestamp())
